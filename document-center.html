@@ -335,11 +335,11 @@
           <li class="dropdown active">
             <a href="#"><i class="icon-home mr-1"></i> Dashboard</a>
             <ul>
-              <li class="active">
+              <li>
                 <a href="index.html"><i class="icon-rocket"></i> Home</a>
               </li>
-              <li>
-                <a href="index-account.html"
+              <li class="active">
+                <a href="document-center.html"
                   ><i class="icon-layers"></i> Document Center</a
                 >
               </li>
@@ -377,7 +377,7 @@
           <div class="container-fluid site-width">
             <!-- START: Breadcrumbs-->
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 col-xl-3">
                 <h4 class="mb-1">Document Search</h4>
                 <p>
                   Specify your search criteria below and press <br />
@@ -392,7 +392,9 @@
                           <label for="inputState">State</label>
                           <select id="inputState" class="form-control">
                             <option selected="">All</option>
-                            <option>...</option>
+                            <option>Alabama</option>
+                            <option>Alaska</option>
+                            <option>All States</option>
                           </select>
                         </div>
 
@@ -400,7 +402,9 @@
                           <label for="inputState">Client</label>
                           <select id="inputState" class="form-control">
                             <option selected="">All</option>
-                            <option>...</option>
+                            <option>ABF Printing</option>
+                            <option>Action Advertising and Flags</option>
+                            <option>Ad Specialties by ken</option>
                           </select>
                         </div>
 
@@ -408,7 +412,9 @@
                           <label for="inputState">Document Type</label>
                           <select id="inputState" class="form-control">
                             <option selected="">All</option>
-                            <option>...</option>
+                            <option>Form</option>
+                            <option>Letter</option>
+                            <option>Pleading</option>
                           </select>
                         </div>
 
@@ -416,7 +422,8 @@
                           <label for="inputState">Project Type</label>
                           <select id="inputState" class="form-control">
                             <option selected="">All</option>
-                            <option>...</option>
+                            <option>Private</option>
+                            <option>Public</option>
                           </select>
                         </div>
 
@@ -429,7 +436,9 @@
                           <label for="inputState">Practice Area</label>
                           <select id="inputState" class="form-control">
                             <option selected="">All</option>
-                            <option>...</option>
+                            <option>Adoption</option>
+                            <option>Auto Accident</option>
+                            <option>Banking</option>
                           </select>
                         </div>
 
@@ -437,7 +446,12 @@
                           <label for="inputState">Category (WFJ Use)</label>
                           <select id="inputState" class="form-control">
                             <option selected="">All</option>
-                            <option>...</option>
+                            <option>
+                              Commercial Litigation ---> Category Name 1
+                            </option>
+                            <option>
+                              Commercial Litigation ---> Category Name 2
+                            </option>
                           </select>
                         </div>
 
@@ -445,24 +459,247 @@
                           <label for="inputState">Form Type</label>
                           <select id="inputState" class="form-control">
                             <option selected="">All</option>
-                            <option>...</option>
+                            <option>BUSINESS ENTITIES - Business Plans</option>
+                            <option>
+                              BUSINESS ENTITIES - Business Purchase
+                            </option>
                           </select>
                         </div>
 
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <a href="" class="">Enter New Document</a>
-                          <button type="submit" class="btn btn-primary">
+                        <div class="clearfix">
+                          <button
+                            type="submit"
+                            class="btn btn-primary float-right ml-2 mb-2 document-search-btn"
+                          >
                             Search
                           </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary float-right document-search-btn"
+                            data-toggle="modal"
+                            data-target="#newdocument"
+                          >
+                            Enter New Document
+                          </button>
+                        </div>
+
+                        <!-- Enter new document Modal -->
+                        <div
+                          class="modal fade"
+                          id="newdocument"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="exampleModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                  Add Documents
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="close"
+                                  data-dismiss="modal"
+                                  aria-label="Close"
+                                >
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="inputState">State</label>
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                          required
+                                        >
+                                          <option selected="">All</option>
+                                          <option>Alabama</option>
+                                          <option>Alaska</option>
+                                          <option>All States</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="inputState"
+                                          >Document Type</label
+                                        >
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                        >
+                                          <option selected="">All</option>
+                                          <option>Form</option>
+                                          <option>Letter</option>
+                                          <option>Pleading</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="inputState"
+                                          >Project Type</label
+                                        >
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                        >
+                                          <option selected="">All</option>
+                                          <option>Private</option>
+                                          <option>Public</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="inputState">Client</label>
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                        >
+                                          <option selected="">All</option>
+                                          <option>ABF Printing</option>
+                                          <option>
+                                            Action Advertising and Flags
+                                          </option>
+                                          <option>Ad Specialties by ken</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label for="inputState"
+                                          >Practice Area</label
+                                        >
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                        >
+                                          <option selected="">All</option>
+                                          <option>Adoption</option>
+                                          <option>Auto Accident</option>
+                                          <option>Banking</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label for="inputState"
+                                          >Category (for WFJ Use)</label
+                                        >
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                        >
+                                          <option selected="">All</option>
+                                          <option>
+                                            Commercial Litigation ---&gt;
+                                            Category Name 1
+                                          </option>
+                                          <option>
+                                            Commercial Litigation ---&gt;
+                                            Category Name 2
+                                          </option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="inputDate"
+                                          >Document Name</label
+                                        >
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="inputDate"
+                                          >WFJ File #</label
+                                        >
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label for="inputDate"
+                                          >Notify Days</label
+                                        >
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label for="inputDate"
+                                          >Description</label
+                                        >
+                                        <textarea
+                                          class="form-control"
+                                          id="exampleFormControlTextarea1"
+                                          rows="3"
+                                        ></textarea>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <div class="custom-file">
+                                        <input
+                                          type="file"
+                                          class="custom-file-input"
+                                          id="customFile"
+                                        />
+                                        <label
+                                          class="custom-file-label n-custom-file-label"
+                                          for="customFile"
+                                          >Choose file</label
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-dismiss="modal"
+                                >
+                                  Close
+                                </button>
+                                <button type="submit" class="btn btn-primary">
+                                  Save changes
+                                </button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </form>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-8 col-xl-9">
                 <h4 class="mb-1">Here are your search results.</h4>
                 <p>
                   Click on a Document Name from the list below to view the
@@ -476,7 +713,7 @@
                     <div class="table-responsive">
                       <table
                         id="example"
-                        class="display table dataTable table-striped layout-primary table-bordered"
+                        class="display table dataTable table-striped layout-primary table-bordered document-center-table"
                       >
                         <thead>
                           <tr>
@@ -494,12 +731,20 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
                             <td></td>
 
                             <td></td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Retirement Plan Enrollment Form</a
                               >
                             </td>
@@ -513,48 +758,41 @@
                           </tr>
 
                           <tr>
-                            <td><a href="">Edit</a></td>
-                            <td></td>
-
-                            <td></td>
                             <td>
-                              <a href="" target="_blank"
-                                >Retirement Plan Enrollment Form</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
                               >
                             </td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
 
-                            <td>D3012_testdoc.doc</td>
-                          </tr>
-
-                          <tr>
-                            <td><a href="">Edit</a></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                              <a href="" target="_blank"
-                                >Retirement Plan Enrollment Form</a
-                              >
-                            </td>
+                            <td>Alaska</td>
+                            <td>test-100</td>
+                            <td>Letter</td>
+                            <td>Private</td>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td></td>
-
-                            <td>D3012_testdoc.doc</td>
                           </tr>
 
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -566,11 +804,19 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -582,11 +828,19 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -598,11 +852,19 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -614,11 +876,19 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -630,11 +900,19 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -646,11 +924,19 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -662,11 +948,19 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -679,11 +973,19 @@
                           </tr>
 
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -696,11 +998,19 @@
                           </tr>
 
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -712,11 +1022,19 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -728,11 +1046,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -744,11 +1062,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -760,11 +1078,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -776,11 +1094,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>BriteLite Promotions LLC</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -792,11 +1110,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Corporate Incentives</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -808,11 +1126,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Corporate Incentives</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -824,11 +1142,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Corporate Incentives</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -840,11 +1158,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Corporate Incentives</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -856,11 +1174,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Corporate Incentives</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -872,11 +1190,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Corporate Incentives</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -888,11 +1206,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Corporate Incentives</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -904,11 +1222,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Corporate Incentives</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -920,11 +1238,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Corporate Incentives</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -936,11 +1254,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Corporate Incentives</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -952,11 +1270,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Corporate Incentives</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -968,11 +1286,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Corporate Incentives</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -984,11 +1302,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1000,11 +1318,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1016,11 +1334,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1032,11 +1350,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1048,11 +1366,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1064,11 +1382,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1080,11 +1398,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1096,11 +1414,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1112,11 +1430,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1128,11 +1446,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1144,11 +1462,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1160,11 +1478,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1176,11 +1494,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1192,11 +1510,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1208,11 +1526,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1224,11 +1542,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1240,11 +1558,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1256,11 +1574,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1272,11 +1590,11 @@
                             <td>D4689_AK - 070119 claimant opinion.doc</td>
                           </tr>
                           <tr>
-                            <td><a href="">Edit</a></td>
+                            <td><a href="" class="anchor-design">Edit</a></td>
                             <td>Creative Advertising Solutions Inc</td>
                             <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank"
+                              <a href="" target="_blank" class="anchor-design"
                                 >Alaska Opinion Letter 2019</a
                               >
                             </td>
@@ -1290,17 +1608,6 @@
                         </tbody>
                       </table>
                     </div>
-
-                    <div
-                      class="d-flex justify-content-between align-items-center mt-4"
-                    >
-                      <span>795 Records Found</span>
-                      <div>
-                        <button type="button" class="btn btn-primary">
-                          Enter New Document
-                        </button>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1312,9 +1619,193 @@
       <!-- END: Content-->
       <!-- START: Footer-->
       <footer class="site-footer">
-        All Content © Wagner, Falconer & Judd, Ltd. 2020
+        <div class="clearfix">
+          <div class="float-md-left">
+            <ol class="breadcrumb bg-transparent align-self-center m-0 p-0">
+              <li class="breadcrumb-item" aria-current="page">
+                <a href="#">Website</a>
+              </li>
+              <li class="breadcrumb-item" aria-current="page">
+                <a href="#">Client Extranet</a>
+              </li>
+              <li class="breadcrumb-item" aria-current="page">
+                <a href="#">Privacy</a>
+              </li>
+              <li class="breadcrumb-item" aria-current="page">
+                <a href="#">Legal</a>
+              </li>
+            </ol>
+          </div>
+          <div class="float-md-right">
+            <p class="mb-0 mt-3 mt-md-0">
+              All Content © Wagner, Falconer & Judd, Ltd. 2020
+            </p>
+          </div>
+        </div>
       </footer>
       <!-- END: Footer-->
+    </div>
+
+    <!-- Edit document Modal -->
+    <div
+      class="modal fade"
+      id="editdocument"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Documents</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                      <option selected="">Alabama</option>
+                      <option>Alabama</option>
+                      <option>Alaska</option>
+                      <option>All States</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputState">Document Type</label>
+                    <select id="inputState" class="form-control">
+                      <option selected="">Form</option>
+                      <option>Form</option>
+                      <option>Letter</option>
+                      <option>Pleading</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputState">Project Type</label>
+                    <select id="inputState" class="form-control">
+                      <option selected="">Private</option>
+                      <option>Private</option>
+                      <option>Public</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputState">Client</label>
+                    <select id="inputState" class="form-control">
+                      <option selected="">ABF Printing</option>
+                      <option>ABF Printing</option>
+                      <option>Action Advertising and Flags</option>
+                      <option>Ad Specialties by ken</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="inputState">Practice Area</label>
+                    <select id="inputState" class="form-control">
+                      <option selected="">Adoption</option>
+                      <option>Adoption</option>
+                      <option>Auto Accident</option>
+                      <option>Banking</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="inputState">Category (for WFJ Use)</label>
+                    <select id="inputState" class="form-control">
+                      <option selected="">
+                        Commercial Litigation ---&gt; Category Name 1
+                      </option>
+                      <option>
+                        Commercial Litigation ---&gt; Category Name 1
+                      </option>
+                      <option>
+                        Commercial Litigation ---&gt; Category Name 2
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputDate">Document Name</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputDate">WFJ File #</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="inputDate">Notify Days</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="inputDate">Description</label>
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      id="customFile"
+                    />
+                    <label
+                      class="custom-file-label n-custom-file-label"
+                      for="customFile"
+                      >Choose file</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- START: Back to top-->
@@ -1378,6 +1869,17 @@
     <!-- START: Page JS-->
     <script src="dist/js/home.script.js"></script>
     <!-- END: Page JS-->
+
+    <script>
+      // Add the following code if you want the name of the file appear on select
+      $(".custom-file-input").on("change", function () {
+        var fileName = $(this).val().split("\\").pop();
+        $(this)
+          .siblings(".custom-file-label")
+          .addClass("selected")
+          .html(fileName);
+      });
+    </script>
   </body>
   <!-- END: Body-->
 </html>
