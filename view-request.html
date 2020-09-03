@@ -344,17 +344,17 @@
                 >
               </li>
               <li class="active">
-                <a href="index-analytic.html"
+                <a href="request-services.html"
                   ><i class="icon-grid"></i> Request services</a
                 >
               </li>
               <li>
-                <a href="index-covid.html"
+                <a href="manage-my-login.html"
                   ><i class="icon-earphones"></i> Manage my login</a
                 >
               </li>
               <li>
-                <a href="index-crypto.html"
+                <a href="payments.html"
                   ><i class="icon-support"></i> Payments</a
                 >
               </li>
@@ -375,7 +375,7 @@
       <main>
         <div class="document-center">
           <div class="container-fluid site-width">
-            <h4 class="mb-4">Request Service</h4>
+            <h4 class="mb-4">View Request</h4>
             <!-- START: Breadcrumbs-->
             <div class="row">
               <div class="col-md-4 col-xl-3">
@@ -384,13 +384,123 @@
                     <div class="card-body">
                       <form>
                         <div class="form-group">
-                          <label for="inputState">Client</label>
+                          <label for="inputState">Requestor</label>
                           <select id="inputState" class="form-control">
-                            <option selected="">All</option>
-                            <option>ABF Printing</option>
-                            <option>Action Advertising and Flags</option>
-                            <option>Ad Specialties by ken</option>
+                            <option selected="">Select</option>
+                            <option>Andrew Nielsen</option>
+                            <option>Ashley Yer</option>
+                            <option>Barb Blomquist</option>
                           </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="inputState">Assigned to</label>
+                          <select id="inputState" class="form-control">
+                            <option selected="">Select</option>
+                            <option>Unassigned</option>
+                            <option>Jeffrey Nicolet</option>
+                            <option>John Markham</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="inputState">Status</label>
+                          <select id="inputState" class="form-control">
+                            <option selected="">Select</option>
+                            <option>New</option>
+                            <option>Active</option>
+                            <option>Local Counsel</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputState">Region</label>
+                          <select id="inputState" class="form-control">
+                            <option selected="">Select</option>
+                            <option>Goodin Co Inc.</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputState">Associate Counsel</label>
+                          <select id="inputState" class="form-control">
+                            <option selected="">Select</option>
+                            <option>Myra L. Graubard</option>
+                            <option>A.V. Knowles & Co.</option>
+                            <option>AAA</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="inputState">Collector</label>
+                          <select id="inputState" class="form-control">
+                            <option selected="">Select</option>
+                            <option>Test Collector</option>
+                            <option>Scott Falconer</option>
+                            <option>Mark Freeman</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="inputDate">Request Date Begin</label>
+                          <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label for="inputDate">Request Date End</label>
+                          <input type="text" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="inputDate">Sort By: &nbsp; </label>
+                          <div
+                            class="custom-control custom-radio custom-control-inline"
+                          >
+                            <input
+                              type="radio"
+                              name="exampleRadios"
+                              value="option1"
+                              class="custom-control-input"
+                              id="customCheck2"
+                            />
+                            <label
+                              class="custom-control-label"
+                              for="customCheck2"
+                              >Status/Name
+                            </label>
+                          </div>
+
+                          <div
+                            class="custom-control custom-radio custom-control-inline"
+                          >
+                            <input
+                              type="radio"
+                              name="exampleRadios"
+                              value="option2"
+                              class="custom-control-input"
+                              id="customCheck4"
+                            />
+                            <label
+                              class="custom-control-label"
+                              for="customCheck4"
+                              >Name</label
+                            >
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <div
+                            class="custom-control custom-checkbox custom-control-inline"
+                          >
+                            <input
+                              type="checkbox"
+                              class="custom-control-input"
+                              checked="checked"
+                              id="customCheck3"
+                            />
+                            <label
+                              class="custom-control-label"
+                              for="customCheck3"
+                              >View Archives</label
+                            >
+                          </div>
                         </div>
                         <div class="clearfix">
                           <button
@@ -399,226 +509,6 @@
                           >
                             Search
                           </button>
-                          <button
-                            type="button"
-                            class="btn btn-primary float-right document-search-btn"
-                            data-toggle="modal"
-                            data-target="#newdocument"
-                          >
-                            Enter New Document
-                          </button>
-                        </div>
-
-                        <!-- Enter new document Modal -->
-                        <div
-                          class="modal fade"
-                          id="newdocument"
-                          tabindex="-1"
-                          role="dialog"
-                          aria-labelledby="exampleModalLabel"
-                          aria-hidden="true"
-                        >
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">
-                                  Add Document
-                                </h5>
-                                <button
-                                  type="button"
-                                  class="close"
-                                  data-dismiss="modal"
-                                  aria-label="Close"
-                                >
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                <form>
-                                  <div class="row">
-                                    <div class="col-md-6">
-                                      <div class="form-group">
-                                        <label for="inputState">State</label>
-                                        <select
-                                          id="inputState"
-                                          class="form-control"
-                                          required
-                                        >
-                                          <option selected="">All</option>
-                                          <option>Alabama</option>
-                                          <option>Alaska</option>
-                                          <option>All States</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <div class="form-group">
-                                        <label for="inputState"
-                                          >Document Type</label
-                                        >
-                                        <select
-                                          id="inputState"
-                                          class="form-control"
-                                        >
-                                          <option selected="">All</option>
-                                          <option>Form</option>
-                                          <option>Letter</option>
-                                          <option>Pleading</option>
-                                        </select>
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                      <div class="form-group">
-                                        <label for="inputState"
-                                          >Project Type</label
-                                        >
-                                        <select
-                                          id="inputState"
-                                          class="form-control"
-                                        >
-                                          <option selected="">All</option>
-                                          <option>Private</option>
-                                          <option>Public</option>
-                                        </select>
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                      <div class="form-group">
-                                        <label for="inputState">Client</label>
-                                        <select
-                                          id="inputState"
-                                          class="form-control"
-                                        >
-                                          <option selected="">All</option>
-                                          <option>ABF Printing</option>
-                                          <option>
-                                            Action Advertising and Flags
-                                          </option>
-                                          <option>Ad Specialties by ken</option>
-                                        </select>
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                      <div class="form-group">
-                                        <label for="inputState"
-                                          >Practice Area</label
-                                        >
-                                        <select
-                                          id="inputState"
-                                          class="form-control"
-                                        >
-                                          <option selected="">All</option>
-                                          <option>Adoption</option>
-                                          <option>Auto Accident</option>
-                                          <option>Banking</option>
-                                        </select>
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                      <div class="form-group">
-                                        <label for="inputState"
-                                          >Category (for WFJ Use)</label
-                                        >
-                                        <select
-                                          id="inputState"
-                                          class="form-control"
-                                        >
-                                          <option selected="">All</option>
-                                          <option>
-                                            Commercial Litigation ---&gt;
-                                            Category Name 1
-                                          </option>
-                                          <option>
-                                            Commercial Litigation ---&gt;
-                                            Category Name 2
-                                          </option>
-                                        </select>
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                      <div class="form-group">
-                                        <label for="inputDate"
-                                          >Document Name</label
-                                        >
-                                        <input
-                                          type="text"
-                                          class="form-control"
-                                        />
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                      <div class="form-group">
-                                        <label for="inputDate"
-                                          >WFJ File #</label
-                                        >
-                                        <input
-                                          type="text"
-                                          class="form-control"
-                                        />
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                      <div class="form-group">
-                                        <label for="inputDate"
-                                          >Notify Days</label
-                                        >
-                                        <input
-                                          type="text"
-                                          class="form-control"
-                                        />
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                      <div class="form-group">
-                                        <label for="inputDate"
-                                          >Description</label
-                                        >
-                                        <textarea
-                                          class="form-control"
-                                          id="exampleFormControlTextarea1"
-                                          rows="3"
-                                        ></textarea>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                      <div class="custom-file">
-                                        <input
-                                          type="file"
-                                          class="custom-file-input"
-                                          id="customFile"
-                                        />
-                                        <label
-                                          class="custom-file-label n-custom-file-label"
-                                          for="customFile"
-                                          >Choose file</label
-                                        >
-                                      </div>
-                                    </div>
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="modal-footer">
-                                <button
-                                  type="button"
-                                  class="btn btn-secondary"
-                                  data-dismiss="modal"
-                                >
-                                  Close
-                                </button>
-                                <button type="submit" class="btn btn-primary">
-                                  Save changes
-                                </button>
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </form>
                     </div>
@@ -636,715 +526,801 @@
                         <thead>
                           <tr>
                             <th>Company</th>
-                            <th>Request</th>
-                            <th></th>
+                            <th>Customer Name</th>
+                            <th>Requestor</th>
+                            <th>Request Date</th>
+                            <th>Assigned To</th>
+                            <th>Collector</th>
+                            <th>Status</th>
+                            <th>Converted from Lien: WFJ File #</th>
+                            <th>Customer Account #</th>
+                            <th>WFJ File #</th>
                             <th></th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
+                              <a href="" class="anchor-design"
+                                >Backwoods HVAC & Refrig, LLC</a
                               >
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
-                            </td>
-                          </tr>
+                                <i class="far fa-edit"></i>
+                              </button>
 
-                          <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
                               >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
 
                           <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
-                            </td>
-                          </tr>
+                                <i class="far fa-edit"></i>
+                              </button>
 
-                          <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
                               >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
 
                           <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
-                            </td>
-                          </tr>
+                                <i class="far fa-edit"></i>
+                              </button>
 
-                          <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
                               >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
                           <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
-                            </td>
-                          </tr>
+                                <i class="far fa-edit"></i>
+                              </button>
 
-                          <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
                               >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
                           <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
-                            </td>
-                          </tr>
+                                <i class="far fa-edit"></i>
+                              </button>
 
-                          <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
                               >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
                           <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
-                            </td>
-                          </tr>
+                                <i class="far fa-edit"></i>
+                              </button>
 
-                          <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
                               >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
                           <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
-                            </td>
-                          </tr>
+                                <i class="far fa-edit"></i>
+                              </button>
 
-                          <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
                               >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
                           <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
-                            </td>
-                          </tr>
+                                <i class="far fa-edit"></i>
+                              </button>
 
-                          <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
                               >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
                           <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
-                            </td>
-                          </tr>
+                                <i class="far fa-edit"></i>
+                              </button>
 
-                          <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
                               >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
                           <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
-                            </td>
-                          </tr>
+                                <i class="far fa-edit"></i>
+                              </button>
 
-                          <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
                               >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
                           <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
-                            </td>
-                          </tr>
+                                <i class="far fa-edit"></i>
+                              </button>
 
-                          <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
                               >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
                           <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
-                            </td>
-                          </tr>
+                                <i class="far fa-edit"></i>
+                              </button>
 
-                          <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
                               >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
                           <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
-                            </td>
-                          </tr>
+                                <i class="far fa-edit"></i>
+                              </button>
 
-                          <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
                               >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
-
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
-                            </td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
-                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
                           <tr>
-                            <td>ABF Printing</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
+                                <i class="far fa-edit"></i>
+                              </button>
+
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
+                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
-
                           <tr>
-                            <td>Action Advertising and Flags</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
+                                <i class="far fa-edit"></i>
+                              </button>
+
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
+                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
-
                           <tr>
-                            <td>Ad Specialties by ken</td>
-                            <td>Account Collection</td>
+                            <td>Goodin Co Inc.</td>
 
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >View Request</a
-                              >
+                              <a href="" class="anchor-design">MBI Companies</a>
                             </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >New</a
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
                               >
+                                <i class="far fa-edit"></i>
+                              </button>
+
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
+                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Goodin Co Inc.</td>
+
+                            <td>
+                              <a href="" class="anchor-design">MBI Companies</a>
+                            </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
+                            <td>
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
+                              >
+                                <i class="far fa-edit"></i>
+                              </button>
+
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
+                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Goodin Co Inc.</td>
+
+                            <td>
+                              <a href="" class="anchor-design">MBI Companies</a>
+                            </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
+                            <td>
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
+                              >
+                                <i class="far fa-edit"></i>
+                              </button>
+
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
+                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Goodin Co Inc.</td>
+
+                            <td>
+                              <a href="" class="anchor-design">MBI Companies</a>
+                            </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
+                            <td>
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
+                              >
+                                <i class="far fa-edit"></i>
+                              </button>
+
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
+                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Goodin Co Inc.</td>
+
+                            <td>
+                              <a href="" class="anchor-design">MBI Companies</a>
+                            </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
+                            <td>
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
+                              >
+                                <i class="far fa-edit"></i>
+                              </button>
+
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
+                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Goodin Co Inc.</td>
+
+                            <td>
+                              <a href="" class="anchor-design">MBI Companies</a>
+                            </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
+                            <td>
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
+                              >
+                                <i class="far fa-edit"></i>
+                              </button>
+
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
+                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Goodin Co Inc.</td>
+
+                            <td>
+                              <a href="" class="anchor-design">MBI Companies</a>
+                            </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
+                            <td>
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
+                              >
+                                <i class="far fa-edit"></i>
+                              </button>
+
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
+                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Goodin Co Inc.</td>
+
+                            <td>
+                              <a href="" class="anchor-design">MBI Companies</a>
+                            </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
+                            <td>
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
+                              >
+                                <i class="far fa-edit"></i>
+                              </button>
+
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
+                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Goodin Co Inc.</td>
+
+                            <td>
+                              <a href="" class="anchor-design">MBI Companies</a>
+                            </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
+                            <td>
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
+                              >
+                                <i class="far fa-edit"></i>
+                              </button>
+
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
+                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Goodin Co Inc.</td>
+
+                            <td>
+                              <a href="" class="anchor-design">MBI Companies</a>
+                            </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
+                            <td>
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
+                              >
+                                <i class="far fa-edit"></i>
+                              </button>
+
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
+                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Goodin Co Inc.</td>
+
+                            <td>
+                              <a href="" class="anchor-design">MBI Companies</a>
+                            </td>
+                            <td>M. Gustafson</td>
+                            <td>11/26/2019</td>
+                            <td>L. Skildum</td>
+                            <td>Active</td>
+                            <td></td>
+                            <td></td>
+                            <td>11029191</td>
+                            <td>48150</td>
+                            <td>
+                              <button
+                                type="submit"
+                                class="btn btn-primary mb-2 view-btn"
+                              >
+                                <i class="far fa-edit"></i>
+                              </button>
+
+                              <button
+                                type="submit"
+                                class="btn btn-primary view-btn"
+                              >
+                                <i class="fas fa-dollar-sign"></i>
+                              </button>
                             </td>
                           </tr>
                         </tbody>
