@@ -57,7 +57,10 @@
       href="dist/vendors/jquery-jvectormap/jquery-jvectormap-2.0.3.css"
     />
     <!-- END: Page CSS-->
-
+    <link
+      rel="stylesheet"
+      href="dist/vendors/multiselect/bootstrap-multiselect.css"
+    />
     <!-- START: Custom CSS-->
     <link rel="stylesheet" href="dist/css/main.css" />
     <!-- END: Custom CSS-->
@@ -338,7 +341,7 @@
               <li>
                 <a href="index.html"><i class="icon-rocket"></i> Home</a>
               </li>
-              <li class="active">
+              <li>
                 <a href="document-center.html"
                   ><i class="icon-layers"></i> Document Center</a
                 >
@@ -348,7 +351,7 @@
                   ><i class="icon-grid"></i> Request services</a
                 >
               </li>
-              <li>
+              <li class="active">
                 <a href="index-covid.html"
                   ><i class="icon-earphones"></i> Manage my login</a
                 >
@@ -375,29 +378,14 @@
       <main>
         <div class="document-center">
           <div class="container-fluid site-width">
+            <h4 class="mb-4">Manage My Login</h4>
             <!-- START: Breadcrumbs-->
             <div class="row">
               <div class="col-md-4 col-xl-3">
-                <h4 class="mb-1">Document Search</h4>
-                <p>
-                  Specify your search criteria below and press <br />
-                  the Search button.
-                </p>
-
-                <div class="card mt-3 mb-5 mb-md-0">
+                <div class="card mb-5 mb-md-0">
                   <div class="card-content">
                     <div class="card-body">
                       <form>
-                        <div class="form-group">
-                          <label for="inputState">State</label>
-                          <select id="inputState" class="form-control">
-                            <option selected="">All</option>
-                            <option>Alabama</option>
-                            <option>Alaska</option>
-                            <option>All States</option>
-                          </select>
-                        </div>
-
                         <div class="form-group">
                           <label for="inputState">Client</label>
                           <select id="inputState" class="form-control">
@@ -409,61 +397,8 @@
                         </div>
 
                         <div class="form-group">
-                          <label for="inputState">Document Type</label>
-                          <select id="inputState" class="form-control">
-                            <option selected="">All</option>
-                            <option>Form</option>
-                            <option>Letter</option>
-                            <option>Pleading</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="inputState">Project Type</label>
-                          <select id="inputState" class="form-control">
-                            <option selected="">All</option>
-                            <option>Private</option>
-                            <option>Public</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="inputDate">Keyword Search</label>
+                          <label for="inputDate">Name</label>
                           <input type="text" class="form-control" />
-                        </div>
-
-                        <div class="form-group">
-                          <label for="inputState">Practice Area</label>
-                          <select id="inputState" class="form-control">
-                            <option selected="">All</option>
-                            <option>Adoption</option>
-                            <option>Auto Accident</option>
-                            <option>Banking</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="inputState">Category (WFJ Use)</label>
-                          <select id="inputState" class="form-control">
-                            <option selected="">All</option>
-                            <option>
-                              Commercial Litigation ---> Category Name 1
-                            </option>
-                            <option>
-                              Commercial Litigation ---> Category Name 2
-                            </option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="inputState">Form Type</label>
-                          <select id="inputState" class="form-control">
-                            <option selected="">All</option>
-                            <option>BUSINESS ENTITIES - Business Plans</option>
-                            <option>
-                              BUSINESS ENTITIES - Business Purchase
-                            </option>
-                          </select>
                         </div>
 
                         <div class="clearfix">
@@ -479,7 +414,7 @@
                             data-toggle="modal"
                             data-target="#newdocument"
                           >
-                            Enter New Document
+                            Add a New User
                           </button>
                         </div>
 
@@ -496,7 +431,7 @@
                             <div class="modal-content">
                               <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">
-                                  Add Document
+                                  Add User
                                 </h5>
                                 <button
                                   type="button"
@@ -512,32 +447,68 @@
                                   <div class="row">
                                     <div class="col-md-6">
                                       <div class="form-group">
-                                        <label for="inputState">State</label>
-                                        <select
-                                          id="inputState"
+                                        <label for="inputDate">UserID</label>
+                                        <input
+                                          type="text"
                                           class="form-control"
-                                          required
-                                        >
-                                          <option selected="">All</option>
-                                          <option>Alabama</option>
-                                          <option>Alaska</option>
-                                          <option>All States</option>
-                                        </select>
+                                        />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
-                                        <label for="inputState"
-                                          >Document Type</label
+                                        <label for="inputDate">Password</label>
+                                        <input
+                                          type="password"
+                                          class="form-control"
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="inputDate"
+                                          >First Name</label
                                         >
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="inputDate">Last Name</label>
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label for="inputState">Type</label>
                                         <select
                                           id="inputState"
                                           class="form-control"
                                         >
-                                          <option selected="">All</option>
-                                          <option>Form</option>
-                                          <option>Letter</option>
-                                          <option>Pleading</option>
+                                          <option selected="">Select</option>
+                                          <option>System Administrator</option>
+                                          <option>Prepaid Legal</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="inputState">Active</label>
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                        >
+                                          <option>Yes</option>
+                                          <option>No</option>
                                         </select>
                                       </div>
                                     </div>
@@ -545,27 +516,53 @@
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label for="inputState"
-                                          >Project Type</label
+                                          >Dashboard User</label
                                         >
                                         <select
                                           id="inputState"
                                           class="form-control"
                                         >
-                                          <option selected="">All</option>
-                                          <option>Private</option>
-                                          <option>Public</option>
+                                          <option>Yes</option>
+                                          <option>No</option>
                                         </select>
                                       </div>
                                     </div>
 
                                     <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="inputState">Attorney</label>
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                        >
+                                          <option>N/A</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="inputState"
+                                          >Show HR Section</label
+                                        >
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                        >
+                                          <option>No</option>
+                                          <option>Yes</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-12">
                                       <div class="form-group">
                                         <label for="inputState">Client</label>
                                         <select
                                           id="inputState"
                                           class="form-control"
                                         >
-                                          <option selected="">All</option>
+                                          <option>Select</option>
                                           <option>ABF Printing</option>
                                           <option>
                                             Action Advertising and Flags
@@ -577,103 +574,69 @@
 
                                     <div class="col-md-12">
                                       <div class="form-group">
-                                        <label for="inputState"
-                                          >Practice Area</label
-                                        >
-                                        <select
-                                          id="inputState"
+                                        <label for="inputDate">EMail</label>
+                                        <input
+                                          type="text"
                                           class="form-control"
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label for="inputState">Region</label>
+                                        <select
+                                          id="boot-multiselect-demo"
+                                          multiple="multiple"
                                         >
-                                          <option selected="">All</option>
-                                          <option>Adoption</option>
-                                          <option>Auto Accident</option>
-                                          <option>Banking</option>
+                                          <option value="jQuery">
+                                            jQuery Tutorials
+                                          </option>
+                                          <option value="Bootstrap">
+                                            Bootstrap Framework
+                                          </option>
+                                          <option value="HTML">HTML</option>
+                                          <option value="CSS">CSS</option>
+                                          <option value="Angular">
+                                            Angular
+                                          </option>
+                                          <option value="Angular">
+                                            javascript
+                                          </option>
+                                          <option value="Java">Java</option>
+                                          <option value="Python">Python</option>
+                                          <option value="MySQL">MySQL</option>
+                                          <option value="Oracle">Oracle</option>
                                         </select>
                                       </div>
                                     </div>
 
                                     <div class="col-md-12">
                                       <div class="form-group">
-                                        <label for="inputState"
-                                          >Category (for WFJ Use)</label
-                                        >
+                                        <label for="inputState">Form(s)</label>
                                         <select
-                                          id="inputState"
-                                          class="form-control"
+                                          id="boot-multiselect-demo1"
+                                          multiple="multiple"
                                         >
-                                          <option selected="">All</option>
-                                          <option>
-                                            Commercial Litigation ---&gt;
-                                            Category Name 1
+                                          <option value="jQuery">
+                                            jQuery Tutorials
                                           </option>
-                                          <option>
-                                            Commercial Litigation ---&gt;
-                                            Category Name 2
+                                          <option value="Bootstrap">
+                                            Bootstrap Framework
                                           </option>
+                                          <option value="HTML">HTML</option>
+                                          <option value="CSS">CSS</option>
+                                          <option value="Angular">
+                                            Angular
+                                          </option>
+                                          <option value="Angular">
+                                            javascript
+                                          </option>
+                                          <option value="Java">Java</option>
+                                          <option value="Python">Python</option>
+                                          <option value="MySQL">MySQL</option>
+                                          <option value="Oracle">Oracle</option>
                                         </select>
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                      <div class="form-group">
-                                        <label for="inputDate"
-                                          >Document Name</label
-                                        >
-                                        <input
-                                          type="text"
-                                          class="form-control"
-                                        />
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                      <div class="form-group">
-                                        <label for="inputDate"
-                                          >WFJ File #</label
-                                        >
-                                        <input
-                                          type="text"
-                                          class="form-control"
-                                        />
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                      <div class="form-group">
-                                        <label for="inputDate"
-                                          >Notify Days</label
-                                        >
-                                        <input
-                                          type="text"
-                                          class="form-control"
-                                        />
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                      <div class="form-group">
-                                        <label for="inputDate"
-                                          >Description</label
-                                        >
-                                        <textarea
-                                          class="form-control"
-                                          id="exampleFormControlTextarea1"
-                                          rows="3"
-                                        ></textarea>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                      <div class="custom-file">
-                                        <input
-                                          type="file"
-                                          class="custom-file-input"
-                                          id="customFile"
-                                        />
-                                        <label
-                                          class="custom-file-label n-custom-file-label"
-                                          for="customFile"
-                                          >Choose file</label
-                                        >
                                       </div>
                                     </div>
                                   </div>
@@ -700,14 +663,6 @@
                 </div>
               </div>
               <div class="col-md-8 col-xl-9">
-                <h4 class="mb-1">Here are your search results.</h4>
-                <p>
-                  Click on a Document Name from the list below to view the
-                  Document. The document will appear in a new window.<br />
-                  When you are finished viewing the document, simply close the
-                  window.
-                </p>
-
                 <div class="card">
                   <div class="card-body">
                     <div class="table-responsive">
@@ -719,14 +674,10 @@
                           <tr>
                             <th></th>
                             <th>Company</th>
-                            <th>State</th>
-                            <th>Document Name</th>
-                            <th>Type</th>
-                            <th>Project</th>
-                            <th>Practice Area/Category</th>
-                            <th>Form Type</th>
-                            <th>WFJ File #</th>
-                            <th>File Name</th>
+                            <th>Name</th>
+                            <th>Manager</th>
+                            <th>Level</th>
+                            <th>Access</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -736,25 +687,16 @@
                                 href=""
                                 class="anchor-design"
                                 data-toggle="modal"
-                                data-target="#editdocument"
+                                data-target="#edituser"
                                 >Edit</a
                               >
                             </td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
 
-                            <td></td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Retirement Plan Enrollment Form</a
-                              >
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-
-                            <td>D3012_testdoc.doc</td>
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
 
                           <tr>
@@ -763,20 +705,16 @@
                                 href=""
                                 class="anchor-design"
                                 data-toggle="modal"
-                                data-target="#editdocument"
+                                data-target="#edituser"
                                 >Edit</a
                               >
                             </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
 
-                            <td>Alaska</td>
-                            <td>test-100</td>
-                            <td>Letter</td>
-                            <td>Private</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
 
                           <tr>
@@ -785,191 +723,16 @@
                                 href=""
                                 class="anchor-design"
                                 data-toggle="modal"
-                                data-target="#editdocument"
+                                data-target="#edituser"
                                 >Edit</a
                               >
                             </td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a
-                                href=""
-                                class="anchor-design"
-                                data-toggle="modal"
-                                data-target="#editdocument"
-                                >Edit</a
-                              >
-                            </td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a
-                                href=""
-                                class="anchor-design"
-                                data-toggle="modal"
-                                data-target="#editdocument"
-                                >Edit</a
-                              >
-                            </td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a
-                                href=""
-                                class="anchor-design"
-                                data-toggle="modal"
-                                data-target="#editdocument"
-                                >Edit</a
-                              >
-                            </td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a
-                                href=""
-                                class="anchor-design"
-                                data-toggle="modal"
-                                data-target="#editdocument"
-                                >Edit</a
-                              >
-                            </td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a
-                                href=""
-                                class="anchor-design"
-                                data-toggle="modal"
-                                data-target="#editdocument"
-                                >Edit</a
-                              >
-                            </td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a
-                                href=""
-                                class="anchor-design"
-                                data-toggle="modal"
-                                data-target="#editdocument"
-                                >Edit</a
-                              >
-                            </td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a
-                                href=""
-                                class="anchor-design"
-                                data-toggle="modal"
-                                data-target="#editdocument"
-                                >Edit</a
-                              >
-                            </td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
 
                           <tr>
@@ -978,23 +741,16 @@
                                 href=""
                                 class="anchor-design"
                                 data-toggle="modal"
-                                data-target="#editdocument"
+                                data-target="#edituser"
                                 >Edit</a
                               >
                             </td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
 
                           <tr>
@@ -1003,23 +759,34 @@
                                 href=""
                                 class="anchor-design"
                                 data-toggle="modal"
-                                data-target="#editdocument"
+                                data-target="#edituser"
                                 >Edit</a
                               >
                             </td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
+                            <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
                             <td>
@@ -1027,583 +794,847 @@
                                 href=""
                                 class="anchor-design"
                                 data-toggle="modal"
-                                data-target="#editdocument"
+                                data-target="#edituser"
                                 >Edit</a
                               >
                             </td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
+                            <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>BriteLite Promotions LLC</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Corporate Incentives</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Corporate Incentives</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Corporate Incentives</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Corporate Incentives</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Corporate Incentives</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Corporate Incentives</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Corporate Incentives</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Corporate Incentives</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Corporate Incentives</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Corporate Incentives</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Corporate Incentives</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>ABF Printing</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
+
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Corporate Incentives</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>Jim Anzia</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
+
                           <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
                             <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#edituser"
+                                >Edit</a
                               >
                             </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
+                            <td>Mark Baggio</td>
+                            <td>Omid Agahi</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
-                          </tr>
-                          <tr>
-                            <td><a href="" class="anchor-design">Edit</a></td>
-                            <td>Creative Advertising Solutions Inc</td>
-                            <td>Alaska</td>
-                            <td>
-                              <a href="" target="_blank" class="anchor-design"
-                                >Alaska Opinion Letter 2019</a
-                              >
-                            </td>
-                            <td>Both (Form/Letter)</td>
-                            <td>Both</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+
+                            <td>Client Administrator</td>
+                            <td>Add/Change Only</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1649,7 +1680,7 @@
     <!-- Edit document Modal -->
     <div
       class="modal fade"
-      id="editdocument"
+      id="edituser"
       tabindex="-1"
       role="dialog"
       aria-labelledby="exampleModalLabel"
@@ -1658,7 +1689,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Edit Document</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Edit User</h5>
             <button
               type="button"
               class="close"
@@ -1669,38 +1700,106 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="">
+            <form>
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                      <option selected="">Alabama</option>
-                      <option>Alabama</option>
-                      <option>Alaska</option>
-                      <option>All States</option>
-                    </select>
+                    <label for="inputDate">UserID</label>
+                    <input type="text" class="form-control" />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="inputState">Document Type</label>
+                    <label for="inputDate">Password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputDate">First Name</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputDate">Last Name</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputState">Manager</label>
                     <select id="inputState" class="form-control">
-                      <option selected="">Form</option>
-                      <option>Form</option>
-                      <option>Letter</option>
-                      <option>Pleading</option>
+                      <option selected="">Select</option>
                     </select>
                   </div>
                 </div>
 
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="inputState">Project Type</label>
+                    <label for="inputDate">Email</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputState">Type</label>
                     <select id="inputState" class="form-control">
-                      <option selected="">Private</option>
-                      <option>Private</option>
-                      <option>Public</option>
+                      <option selected="">Client Administrator</option>
+                      <option>System Administrator</option>
+                      <option>Prepaid Legal</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputState">Active</label>
+                    <select id="inputState" class="form-control">
+                      <option>Yes</option>
+                      <option>No</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputState">Dashboard User</label>
+                    <select id="inputState" class="form-control">
+                      <option>Yes</option>
+                      <option>No</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputState">Attorney</label>
+                    <select id="boot-multiselect-demo4" multiple="multiple">
+                      <option value="jQuery">jQuery Tutorials</option>
+                      <option value="Bootstrap">Bootstrap Framework</option>
+                      <option value="HTML">HTML</option>
+                      <option value="CSS">CSS</option>
+                      <option value="Angular">Angular</option>
+                      <option value="Angular">javascript</option>
+                      <option value="Java">Java</option>
+                      <option value="Python">Python</option>
+                      <option value="MySQL">MySQL</option>
+                      <option value="Oracle">Oracle</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputState">Show HR Section</label>
+                    <select id="inputState" class="form-control">
+                      <option>No</option>
+                      <option>Yes</option>
                     </select>
                   </div>
                 </div>
@@ -1709,7 +1808,7 @@
                   <div class="form-group">
                     <label for="inputState">Client</label>
                     <select id="inputState" class="form-control">
-                      <option selected="">ABF Printing</option>
+                      <option>Select</option>
                       <option>ABF Printing</option>
                       <option>Action Advertising and Flags</option>
                       <option>Ad Specialties by ken</option>
@@ -1719,76 +1818,54 @@
 
                 <div class="col-md-12">
                   <div class="form-group">
-                    <label for="inputState">Practice Area</label>
-                    <select id="inputState" class="form-control">
-                      <option selected="">Adoption</option>
-                      <option>Adoption</option>
-                      <option>Auto Accident</option>
-                      <option>Banking</option>
+                    <label for="inputState">Region</label>
+                    <select id="boot-multiselect-demo2" multiple="multiple">
+                      <option value="jQuery">jQuery Tutorials</option>
+                      <option value="Bootstrap">Bootstrap Framework</option>
+                      <option value="HTML">HTML</option>
+                      <option value="CSS">CSS</option>
+                      <option value="Angular">Angular</option>
+                      <option value="Angular">javascript</option>
+                      <option value="Java">Java</option>
+                      <option value="Python">Python</option>
+                      <option value="MySQL">MySQL</option>
+                      <option value="Oracle">Oracle</option>
                     </select>
                   </div>
                 </div>
 
                 <div class="col-md-12">
                   <div class="form-group">
-                    <label for="inputState">Category (for WFJ Use)</label>
+                    <label for="inputState">Form(s)</label>
+                    <select id="boot-multiselect-demo3" multiple="multiple">
+                      <option value="jQuery">jQuery Tutorials</option>
+                      <option value="Bootstrap">Bootstrap Framework</option>
+                      <option value="HTML">HTML</option>
+                      <option value="CSS">CSS</option>
+                      <option value="Angular">Angular</option>
+                      <option value="Angular">javascript</option>
+                      <option value="Java">Java</option>
+                      <option value="Python">Python</option>
+                      <option value="MySQL">MySQL</option>
+                      <option value="Oracle">Oracle</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputState">Update Privileges</label>
                     <select id="inputState" class="form-control">
-                      <option selected="">
-                        Commercial Litigation ---&gt; Category Name 1
-                      </option>
-                      <option>
-                        Commercial Litigation ---&gt; Category Name 1
-                      </option>
-                      <option>
-                        Commercial Litigation ---&gt; Category Name 2
-                      </option>
+                      <option>Add/Change Only</option>
+                      <option>Read-Only</option>
+                      <option>Add/Change/Delete</option>
                     </select>
                   </div>
                 </div>
 
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="inputDate">Document Name</label>
-                    <input type="text" class="form-control" />
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="inputDate">WFJ File #</label>
-                    <input type="text" class="form-control" />
-                  </div>
-                </div>
-
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="inputDate">Notify Days</label>
-                    <input type="text" class="form-control" />
-                  </div>
-                </div>
-
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="inputDate">Description</label>
-                    <textarea
-                      class="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="custom-file">
-                    <input
-                      type="file"
-                      class="custom-file-input"
-                      id="customFile"
-                    />
-                    <label
-                      class="custom-file-label n-custom-file-label"
-                      for="customFile"
-                      >Choose file</label
-                    >
+                    <label for="inputState">Password Expires</label>
+                    <p class="for-bold">1/1/2015</p>
                   </div>
                 </div>
               </div>
@@ -1862,6 +1939,10 @@
     <script src="dist/vendors/datatable/buttons/js/buttons.print.min.js"></script>
     <!-- END: Page Vendor JS-->
 
+    <!-- start multiselect JS-->
+    <script src="dist/vendors/multiselect/bootstrap-multiselect.js"></script>
+    <!-- END: multiselect JS-->
+
     <!-- START: Page Script JS-->
     <script src="dist/js/datatable.script.js"></script>
     <!-- END: Page Script JS-->
@@ -1878,6 +1959,55 @@
           .siblings(".custom-file-label")
           .addClass("selected")
           .html(fileName);
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#boot-multiselect-demo").multiselect({
+          includeSelectAllOption: true,
+
+          enableFiltering: true,
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#boot-multiselect-demo1").multiselect({
+          includeSelectAllOption: true,
+
+          enableFiltering: true,
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#boot-multiselect-demo2").multiselect({
+          includeSelectAllOption: true,
+
+          enableFiltering: true,
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#boot-multiselect-demo3").multiselect({
+          includeSelectAllOption: true,
+
+          enableFiltering: true,
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#boot-multiselect-demo4").multiselect({
+          includeSelectAllOption: true,
+
+          enableFiltering: true,
+        });
       });
     </script>
   </body>

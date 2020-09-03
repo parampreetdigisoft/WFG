@@ -6301,3 +6301,38 @@ path.domain {
 .document-center-table thead tr th:first-child::before {
   display: none;
 }
+
+.my-select .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  content: "\f078 ";
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  font-family: fontawesome;
+  font-size: 11px;
+  color: #50525e;
+}
+
+.my-select li label {
+  padding: 8px 16px !important;
+}
+
+.my-select li label:focus {
+  outline: 0;
+}
+
+.my-select .multiselect-container > li > a > label > input[type="checkbox"] {
+  margin-bottom: 0px;
+  margin-right: 4px;
+}
+
+.for-bold {
+  font-weight: 700;
+  color: #1e3d73;
+}
