@@ -6354,3 +6354,24 @@ path.domain {
   display: flex;
   justify-content: space-between;
 }
+
+.attached-file {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.attached-file li {
+  padding-left: 25px;
+  position: relative;
+}
+
+.attached-file li::after {
+  content: "\f00c";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: fontawesome;
+  color: #1e3d73;
+}

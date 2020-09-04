@@ -442,7 +442,7 @@
                             </div>
                           </div>
 
-                          <div class="col-md-4">
+                          <div class="col-md-8">
                             <div class="form-group">
                               <label for="inputState">Status</label>
                               <select id="inputState" class="form-control">
@@ -453,162 +453,433 @@
                               </select>
                             </div>
 
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="inputDate">Request Date</label>
+                                  <input
+                                    type="text"
+                                    class="form-control datepicker"
+                                    id="inputDate"
+                                  />
+                                </div>
+                              </div>
+
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="inputDate"
+                                    >WFJ File Close Date</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control datepicker"
+                                    id="inputDate"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
                             <div class="form-group">
-                              <label for="inputDate">WFJ File Close Date</label>
-                              <input
-                                type="text"
-                                class="form-control datepicker"
-                                id="inputDate"
-                              />
+                              <label for="inputState">Balance Due:</label>
+                              <p class="for-bold">$11,280.82</p>
+                            </div>
+                          </div>
+
+                          <div class="col-md-5">
+                            <div class="form-group">
+                              <label for="inputState"
+                                >Total Customer Payments/Credits:</label
+                              >
+                              <p class="for-bold">$0.00</p>
                             </div>
                           </div>
 
                           <div class="col-md-4">
                             <div class="form-group">
-                              <label for="inputDate">Request Date</label>
-                              <input
-                                type="text"
-                                class="form-control datepicker"
-                                id="inputDate"
-                              />
+                              <label for="inputState"
+                                >Remaining Amount Due:</label
+                              >
+                              <p class="for-bold">$11,280.82</p>
                             </div>
                           </div>
 
-                          <div class="col-md-4">
+                          <div class="col-md-6">
                             <div class="form-group">
                               <label for="inputDate">Customer Name</label>
                               <input type="text" class="form-control" />
                             </div>
-
+                          </div>
+                          <div class="col-md-6">
                             <div class="form-group">
                               <label for="inputDate">Customer Contact</label>
                               <input type="text" class="form-control" />
                             </div>
                           </div>
 
-                          <div class="col-md-8">
+                          <div class="col-md-12">
                             <label for="inputDate">Customer Address</label>
+
+                            <div class="form-group">
+                              <textarea
+                                class="form-control"
+                                id="exampleFormControlTextarea1"
+                                rows="1"
+                                placeholder="Address"
+                              ></textarea>
+                            </div>
+
                             <div class="row">
-                              <div class="col-md-6">
+                              <div class="col-md-3">
                                 <div class="form-group">
-                                  <textarea
+                                  <input
+                                    type="text"
                                     class="form-control"
-                                    id="exampleFormControlTextarea1"
-                                    rows="3"
-                                    placeholder="Address"
-                                  ></textarea>
+                                    placeholder="City"
+                                  />
                                 </div>
                               </div>
 
-                              <div class="col-md-6">
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <input
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="City"
-                                      />
-                                    </div>
-                                  </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="State"
+                                  />
+                                </div>
+                              </div>
 
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <input
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="State"
-                                      />
-                                    </div>
-                                  </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Zip Code"
+                                  />
+                                </div>
+                              </div>
 
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <input
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="Zip Code"
-                                      />
-                                    </div>
-                                  </div>
-
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <input
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="Country"
-                                      />
-                                    </div>
-                                  </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Country"
+                                  />
                                 </div>
                               </div>
                             </div>
                           </div>
 
-                          <div class="col-md-6">
+                          <div class="col-md-12">
                             <div class="form-group">
-                              <label for="inputState">Assigned to</label>
-                              <select id="inputState" class="form-control">
-                                <option selected="">Select</option>
-                                <option>Unassigned</option>
-                                <option>Jeffrey Nicolet</option>
-                                <option>John Markham</option>
-                              </select>
+                              <label for="inputState"
+                                >Customer Phone Domestic</label
+                              >
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Area Code"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Exchange"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Number"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Extension"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="inputState"
+                                >Customer Phone International
+                              </label>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Intl Code"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Country Code + Number"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="inputState"
+                                >Customer Fax Domestic</label
+                              >
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Area Code"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Exchange"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Number"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Extension"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="inputState"
+                                >Customer Fax International
+                              </label>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Intl Code"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Country Code + Number"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="inputState"
+                                >Customer Cell Phone</label
+                              >
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Area Code"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Exchange"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Number"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Extension"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="inputState">Status</label>
-                              <select id="inputState" class="form-control">
-                                <option selected="">Select</option>
-                                <option>New</option>
-                                <option>Active</option>
-                                <option>Local Counsel</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="inputState">Region</label>
-                              <select id="inputState" class="form-control">
-                                <option selected="">Select</option>
-                                <option>Goodin Co Inc.</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="inputState">Associate Counsel</label>
-                              <select id="inputState" class="form-control">
-                                <option selected="">Select</option>
-                                <option>Myra L. Graubard</option>
-                                <option>A.V. Knowles & Co.</option>
-                                <option>AAA</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="inputState">Collector</label>
-                              <select id="inputState" class="form-control">
-                                <option selected="">Select</option>
-                                <option>Test Collector</option>
-                                <option>Scott Falconer</option>
-                                <option>Mark Freeman</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="inputDate">Request Date Begin</label>
+                              <label for="inputState">Customer E-Mail</label>
                               <input type="text" class="form-control" />
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="inputDate">Request Date End</label>
+                              <label for="inputState">Customer Account #</label>
                               <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="inputState">Balance Due</label>
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="inputState"
+                                >Amount Due with Service Charge</label
+                              >
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="inputDate"
+                                >CollectMax Record Number</label
+                              >
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="inputDate">WFJ File #</label>
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="inputDate"
+                                >Converted from Bond: WFJ File #</label
+                              >
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="inputDate"
+                                >Converted from Lien: WFJ File #</label
+                              >
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="inputState">Bill Type</label>
+                              <select id="inputState" class="form-control">
+                                <option selected="">Select</option>
+                                <option>Contingent</option>
+                                <option>Hourly</option>
+                                <option>Flat Fee</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="inputState">Practice Group</label>
+                              <select id="inputState" class="form-control">
+                                <option selected="">Select</option>
+                                <option>Commercial Litigation</option>
+                                <option>Criminal</option>
+                                <option>Estate Planning</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="inputDate">Rate</label>
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+
+                          <div class="col-md-3">
+                            <div class="form-group">
+                              <label for="inputState"
+                                >Total Customer Payments</label
+                              >
+                              <p class="for-bold">$0.00</p>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3">
+                            <div class="form-group">
+                              <label for="inputState"
+                                >Remaining Amount Due</label
+                              >
+                              <p class="for-bold">$11,280.82</p>
                             </div>
                           </div>
                         </div>
@@ -620,8 +891,116 @@
                           >
                             Search
                           </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-secondary float-right document-search-btn"
+                            data-dismiss="modal"
+                          >
+                            Delete
+                          </button>
                         </div>
                       </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mt-4">
+                  <div class="card-content">
+                    <div class="card-body">
+                      <label for="inputState" class="for-bold"
+                        >Attached Files</label
+                      >
+
+                      <ul class="attached-file">
+                        <li>Click on 'Remove' to remove a file.</li>
+                        <li>
+                          Be sure to click the 'Submit' button to save changes
+                          to this Service Request form before attaching files to
+                          this Service Request
+                        </li>
+                        <li>
+                          To send a notice to the Requestor and Assigned
+                          Attorney regarding any of the files below, check the
+                          box next to the file and press the 'Submit' button
+                          below.
+                        </li>
+                        <li>To add files, follow the directions below.</li>
+                      </ul>
+
+                      <label for="inputState" class="for-bold"
+                        >Attach a document to this request</label
+                      >
+                      <p>
+                        Attach copies of Purchase Orders, Account Statements,
+                        Unpaid Invoices, Preliminary Notices and any other
+                        pertinent documents by locating the file from your
+                        computer and pressing the "Upload File" button below. Be
+                        sure to save your changes made to the request
+                        information above by pressing the 'Submit' button before
+                        attaching files to this request!
+                      </p>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label for="inputState">Upload Document</label>
+                          <div class="custom-file">
+                            <input
+                              type="file"
+                              class="custom-file-input"
+                              id="customFile"
+                            />
+                            <label
+                              class="custom-file-label n-custom-file-label"
+                              for="customFile"
+                              >Choose file</label
+                            >
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="inputState">Document Type</label>
+                            <select id="inputState" class="form-control">
+                              <option selected="">Select</option>
+                              <option>Contingent</option>
+                              <option>Hourly</option>
+                              <option>Flat Fee</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <div
+                              class="custom-control custom-checkbox custom-control-inline"
+                            >
+                              <input
+                                type="checkbox"
+                                class="custom-control-input"
+                                checked="checked"
+                                id="customCheck3"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck3"
+                                >To send a notice to the Requestor and Assigned
+                                Attorney regarding this new file, check the box
+                                to the right</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12 text-right">
+                          <button
+                            type="submit"
+                            class="btn btn-primary document-search-btn"
+                          >
+                            Upload File
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -675,223 +1054,854 @@
                             >
                               <thead>
                                 <tr>
-                                  <th>Company</th>
-                                  <th>Customer Name</th>
-                                  <th>Requestor</th>
-                                  <th>Request Date</th>
-                                  <th>Assigned To</th>
-                                  <th>Collector</th>
+                                  <th></th>
+                                  <th></th>
+                                  <th>Note Date</th>
+                                  <th>Follow Up Date</th>
+                                  <th>Author</th>
+                                  <th>Contact Notes</th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
-                                </tr>
-
-                                <tr>
-                                  <td>Goodin Co Inc.</td>
-
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
-                                    >
+                                    No answer received. Preparing default
+                                    judgment.
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
-                                </tr>
-                                <tr>
-                                  <td>Goodin Co Inc.</td>
-
-                                  <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
-                                    >
-                                  </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
                                 </tr>
                               </tbody>
                             </table>
@@ -919,223 +1929,363 @@
                             >
                               <thead>
                                 <tr>
-                                  <th>Company</th>
-                                  <th>Customer Name</th>
-                                  <th>Requestor</th>
-                                  <th>Request Date</th>
-                                  <th>Assigned To</th>
-                                  <th>Collector</th>
+                                  <th></th>
+                                  <th></th>
+                                  <th>Payment Date Payment Type</th>
+                                  <th>Check Number</th>
+                                  <th>Entered By</th>
+                                  <th>Amount</th>
+                                  <th>Currency</th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
-                                </tr>
-
-                                <tr>
-                                  <td>Goodin Co Inc.</td>
-
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
-                                    >
+                                    No answer received. Preparing default
+                                    judgment.
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
-                                </tr>
-                                <tr>
-                                  <td>Goodin Co Inc.</td>
-
-                                  <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
-                                    >
-                                  </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td></td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                  <td></td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                  <td></td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                  <td></td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                  <td></td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                  <td></td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                  <td></td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                  <td></td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                  <td></td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                  <td></td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
+                                  <td>
+                                    No answer received. Preparing default
+                                    judgment.
+                                  </td>
+                                  <td></td>
                                 </tr>
                                 <tr>
-                                  <td>Goodin Co Inc.</td>
+                                  <td>
+                                    <a href="" class="anchor-design">Edit</a>
+                                  </td>
 
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
                                     >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customCheck6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck6"
+                                      ></label>
+                                    </div>
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
-                                </tr>
-                                <tr>
-                                  <td>Goodin Co Inc.</td>
-
+                                  <td>8/31/2020</td>
+                                  <td>9/9/2020 7:00:00 AM</td>
+                                  <td>Test Admin</td>
                                   <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
-                                    >
+                                    No answer received. Preparing default
+                                    judgment.
                                   </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
-                                </tr>
-                                <tr>
-                                  <td>Goodin Co Inc.</td>
-
-                                  <td>
-                                    <a href="" class="anchor-design"
-                                      >Backwoods HVAC & Refrig, LLC</a
-                                    >
-                                  </td>
-                                  <td>M. Gustafson</td>
-                                  <td>11/26/2019</td>
-                                  <td>L. Skildum</td>
-                                  <td>Active</td>
+                                  <td></td>
                                 </tr>
                               </tbody>
                             </table>
