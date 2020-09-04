@@ -6302,6 +6302,16 @@ path.domain {
   display: none;
 }
 
+.request-services-table thead tr th:first-child:after,
+.request-services-table thead tr th:first-child::before {
+  display: block;
+}
+
+.view-table thead tr th:last-child:after,
+.view-table thead tr th:last-child::before {
+  display: none;
+}
+
 .my-select .dropdown-toggle::after {
   display: inline-block;
   margin-left: 0.255em;
@@ -6374,4 +6384,21 @@ path.domain {
   left: 0;
   font-family: fontawesome;
   color: #1e3d73;
+}
+
+.view-requst .dataTables_wrapper .dt-buttons {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.view-requst .dataTables_wrapper .dt-buttons .buttons-copy,
+.view-requst .dataTables_wrapper .dt-buttons .buttons-excel,
+.view-requst .dataTables_wrapper .dt-buttons .buttons-print {
+  display: none;
+}
+
+.view-requst .btn-group > .btn-group:not(:first-child),
+.btn-group > .btn:not(:first-child) {
+  margin-left: 0;
+  border-radius: 4px !important;
 }
