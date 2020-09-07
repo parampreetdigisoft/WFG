@@ -434,23 +434,6 @@
 
                           <div class="col-md-4">
                             <div class="form-group">
-                              <label for="inputState">Associate Counsel</label>
-                              <button
-                                type="submit"
-                                class="btn btn-primary w-100"
-                              >
-                                Update Associate Info
-                              </button>
-                              <ul class="update-associate">
-                                <li>Total Invoices:<span>$0.00</span></li>
-                                <li>Total Amount Paid:<span>$0.00</span></li>
-                                <li>Balance Due:<span>$0.00</span></li>
-                              </ul>
-                            </div>
-                          </div>
-
-                          <div class="col-md-8">
-                            <div class="form-group">
                               <label for="inputState">Status</label>
                               <select id="inputState" class="form-control">
                                 <option selected="">Select</option>
@@ -459,34 +442,30 @@
                                 <option>In Suit</option>
                               </select>
                             </div>
+                          </div>
 
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="inputDate">Request Date</label>
-                                  <input
-                                    type="text"
-                                    class="form-control datepicker"
-                                    id="inputDate"
-                                  />
-                                </div>
-                              </div>
-
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="inputDate"
-                                    >WFJ File Close Date</label
-                                  >
-                                  <input
-                                    type="text"
-                                    class="form-control datepicker"
-                                    id="inputDate"
-                                  />
-                                </div>
-                              </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="inputDate">Request Date</label>
+                              <input
+                                type="text"
+                                class="form-control datepicker"
+                                id="inputDate"
+                              />
                             </div>
                           </div>
-                          <div class="col-md-3">
+
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="inputDate">WFJ File Close Date</label>
+                              <input
+                                type="text"
+                                class="form-control datepicker"
+                                id="inputDate"
+                              />
+                            </div>
+                          </div>
+                          <!--<div class="col-md-3">
                             <div class="form-group">
                               <label for="inputState">Balance Due:</label>
                               <p class="for-bold">$11,280.82</p>
@@ -509,7 +488,7 @@
                               >
                               <p class="for-bold">$11,280.82</p>
                             </div>
-                          </div>
+                          </div>-->
 
                           <div class="col-md-6">
                             <div class="form-group">
@@ -871,24 +850,6 @@
                               <input type="text" class="form-control" />
                             </div>
                           </div>
-
-                          <div class="col-md-3">
-                            <div class="form-group">
-                              <label for="inputState"
-                                >Total Customer Payments</label
-                              >
-                              <p class="for-bold">$0.00</p>
-                            </div>
-                          </div>
-
-                          <div class="col-md-3">
-                            <div class="form-group">
-                              <label for="inputState"
-                                >Remaining Amount Due</label
-                              >
-                              <p class="for-bold">$11,280.82</p>
-                            </div>
-                          </div>
                         </div>
 
                         <div class="clearfix">
@@ -911,160 +872,6 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="card mt-4">
-                  <div class="card-content">
-                    <div class="card-body">
-                      <label for="inputState" class="for-bold"
-                        >Attached Files</label
-                      >
-
-                      <ul class="attached-file">
-                        <li>Click on 'Remove' to remove a file.</li>
-                        <li>
-                          Be sure to click the 'Submit' button to save changes
-                          to this Service Request form before attaching files to
-                          this Service Request
-                        </li>
-                        <li>
-                          To send a notice to the Requestor and Assigned
-                          Attorney regarding any of the files below, check the
-                          box next to the file and press the 'Submit' button
-                          below.
-                        </li>
-                        <li>To add files, follow the directions below.</li>
-                      </ul>
-
-                      <div class="row">
-                        <div class="col-md-2">
-                          <div class="form-group">
-                            <label for="inputState" class="d-block"
-                              >Send Notice</label
-                            >
-                            <div
-                              class="custom-control custom-checkbox custom-control-inline"
-                            >
-                              <input
-                                type="checkbox"
-                                class="custom-control-input"
-                                checked="checked"
-                                id="customCheck3"
-                              />
-                              <label
-                                class="custom-control-label"
-                                for="customCheck3"
-                              ></label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <label for="inputState">Document Type</label>
-                            <select id="inputState" class="form-control">
-                              <option selected="">Select</option>
-                              <option>Contingent</option>
-                              <option>Hourly</option>
-                              <option>Flat Fee</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="inputState">File Name</label>
-                            <p class="for-bold">scredit1234567890.pdf</p>
-                          </div>
-                        </div>
-
-                        <div class="col-md-3">
-                          <label for="inputState" class="invisible d-block"
-                            >dummy</label
-                          >
-                          <button
-                            type="submit"
-                            class="btn btn-primary document-search-btn"
-                          >
-                            Remove
-                          </button>
-                        </div>
-                      </div>
-
-                      <label for="inputState" class="for-bold"
-                        >Attach a document to this request</label
-                      >
-                      <p>
-                        Attach copies of Purchase Orders, Account Statements,
-                        Unpaid Invoices, Preliminary Notices and any other
-                        pertinent documents by locating the file from your
-                        computer and pressing the "Upload File" button below. Be
-                        sure to save your changes made to the request
-                        information above by pressing the 'Submit' button before
-                        attaching files to this request!
-                      </p>
-
-                      <div class="row">
-                        <div class="col-md-6">
-                          <label for="inputState">Upload Document</label>
-                          <div class="custom-file">
-                            <input
-                              type="file"
-                              class="custom-file-input"
-                              id="customFile"
-                            />
-                            <label
-                              class="custom-file-label n-custom-file-label"
-                              for="customFile"
-                              >Choose file</label
-                            >
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="inputState">Document Type</label>
-                            <select id="inputState" class="form-control">
-                              <option selected="">Select</option>
-                              <option>Contingent</option>
-                              <option>Hourly</option>
-                              <option>Flat Fee</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <div
-                              class="custom-control custom-checkbox custom-control-inline"
-                            >
-                              <input
-                                type="checkbox"
-                                class="custom-control-input"
-                                checked="checked"
-                                id="customCheck3"
-                              />
-                              <label
-                                class="custom-control-label"
-                                for="customCheck3"
-                                >To send a notice to the Requestor and Assigned
-                                Attorney regarding this new file, check the box
-                                to the right</label
-                              >
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-12 text-right">
-                          <button
-                            type="submit"
-                            class="btn btn-primary document-search-btn"
-                          >
-                            Upload File
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
               <div class="col-md-7 col-xl-7">
                 <div class="custom-tabs">
@@ -1072,18 +879,30 @@
                     <li class="nav-item" role="presentation">
                       <a
                         class="nav-link active bg-white mr-3"
+                        id="summary-tab"
+                        data-toggle="pill"
+                        href="#summary"
+                        role="tab"
+                        aria-controls="summary"
+                        aria-selected="true"
+                        >Summary</a
+                      >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link bg-white mr-3"
                         id="pills-home-tab"
                         data-toggle="pill"
                         href="#pills-home"
                         role="tab"
                         aria-controls="pills-home"
-                        aria-selected="true"
+                        aria-selected="false"
                         >Notes</a
                       >
                     </li>
                     <li class="nav-item" role="presentation">
                       <a
-                        class="nav-link bg-white"
+                        class="nav-link bg-white mr-3"
                         id="pills-profile-tab"
                         data-toggle="pill"
                         href="#pills-profile"
@@ -1093,10 +912,62 @@
                         >Payments</a
                       >
                     </li>
+
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link bg-white mr-3"
+                        id="attached-tab"
+                        data-toggle="pill"
+                        href="#attached-file"
+                        role="tab"
+                        aria-controls="attached-file"
+                        aria-selected="false"
+                        >Attached File</a
+                      >
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link bg-white mr-3"
+                        id="counsel-tab"
+                        data-toggle="pill"
+                        href="#counsel"
+                        role="tab"
+                        aria-controls="counsel"
+                        aria-selected="false"
+                        >Counsel</a
+                      >
+                    </li>
                   </ul>
                   <div class="tab-content" id="pills-tabContent">
                     <div
                       class="tab-pane fade show active"
+                      id="summary"
+                      role="tabpanel"
+                      aria-labelledby="summary-tab"
+                    >
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <ul class="update-associate">
+                                <li>Balance Due:<span>$11,280.82</span></li>
+                                <li>
+                                  Total Customer Payments/Credits:<span
+                                    >$0.00</span
+                                  >
+                                </li>
+                                <li>
+                                  Remaining Amount Due:<span>$11,280.82</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
                       id="pills-home"
                       role="tabpanel"
                       aria-labelledby="pills-home-tab"
@@ -2635,13 +2506,230 @@
                         </div>
                       </div>
                     </div>
+
                     <div
                       class="tab-pane fade"
-                      id="pills-contact"
+                      id="attached-file"
                       role="tabpanel"
-                      aria-labelledby="pills-contact-tab"
+                      aria-labelledby="attached-tab"
                     >
-                      ...
+                      <div class="card">
+                        <div class="card-body">
+                          <label for="inputState" class="for-bold"
+                            >Attached Files</label
+                          >
+
+                          <ul class="attached-file">
+                            <li>Click on 'Remove' to remove a file.</li>
+                            <li>
+                              Be sure to click the 'Submit' button to save
+                              changes to this Service Request form before
+                              attaching files to this Service Request
+                            </li>
+                            <li>
+                              To send a notice to the Requestor and Assigned
+                              Attorney regarding any of the files below, check
+                              the box next to the file and press the 'Submit'
+                              button below.
+                            </li>
+                            <li>To add files, follow the directions below.</li>
+                          </ul>
+
+                          <div class="row">
+                            <div class="col-md-2">
+                              <div class="form-group">
+                                <label for="inputState" class="d-block"
+                                  >Send Notice</label
+                                >
+                                <div
+                                  class="custom-control custom-checkbox custom-control-inline"
+                                >
+                                  <input
+                                    type="checkbox"
+                                    class="custom-control-input"
+                                    checked="checked"
+                                    id="customCheck3"
+                                  />
+                                  <label
+                                    class="custom-control-label"
+                                    for="customCheck3"
+                                  ></label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="form-group">
+                                <label for="inputState">Document Type</label>
+                                <select id="inputState" class="form-control">
+                                  <option selected="">Select</option>
+                                  <option>Contingent</option>
+                                  <option>Hourly</option>
+                                  <option>Flat Fee</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <label for="inputState">File Name</label>
+                                <p class="for-bold">scredit1234567890.pdf</p>
+                              </div>
+                            </div>
+
+                            <div class="col-md-3">
+                              <label for="inputState" class="invisible d-block"
+                                >dummy</label
+                              >
+                              <button
+                                type="submit"
+                                class="btn btn-primary document-search-btn"
+                              >
+                                Remove
+                              </button>
+                            </div>
+                          </div>
+
+                          <label for="inputState" class="for-bold"
+                            >Attach a document to this request</label
+                          >
+                          <p>
+                            Attach copies of Purchase Orders, Account
+                            Statements, Unpaid Invoices, Preliminary Notices and
+                            any other pertinent documents by locating the file
+                            from your computer and pressing the "Upload File"
+                            button below. Be sure to save your changes made to
+                            the request information above by pressing the
+                            'Submit' button before attaching files to this
+                            request!
+                          </p>
+
+                          <div class="row">
+                            <div class="col-md-6">
+                              <label for="inputState">Upload Document</label>
+                              <div class="custom-file">
+                                <input
+                                  type="file"
+                                  class="custom-file-input"
+                                  id="customFile"
+                                />
+                                <label
+                                  class="custom-file-label n-custom-file-label"
+                                  for="customFile"
+                                  >Choose file</label
+                                >
+                              </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="inputState">Document Type</label>
+                                <select id="inputState" class="form-control">
+                                  <option selected="">Select</option>
+                                  <option>Contingent</option>
+                                  <option>Hourly</option>
+                                  <option>Flat Fee</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <div
+                                  class="custom-control custom-checkbox custom-control-inline"
+                                >
+                                  <input
+                                    type="checkbox"
+                                    class="custom-control-input"
+                                    checked="checked"
+                                    id="customCheck3"
+                                  />
+                                  <label
+                                    class="custom-control-label"
+                                    for="customCheck3"
+                                    >To send a notice to the Requestor and
+                                    Assigned Attorney regarding this new file,
+                                    check the box to the right</label
+                                  >
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-md-12 text-right">
+                              <button
+                                type="submit"
+                                class="btn btn-primary document-search-btn"
+                              >
+                                Upload File
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="tab-pane fade"
+                      id="counsel"
+                      role="tabpanel"
+                      aria-labelledby="counsel-tab"
+                    >
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <label for="inputState"
+                                  >Associate Counsel</label
+                                >
+                                <button
+                                  type="submit"
+                                  class="btn btn-primary w-100"
+                                >
+                                  Update Associate Info
+                                </button>
+
+                                <button
+                                  type="submit"
+                                  class="btn btn-primary w-100 mt-3"
+                                >
+                                  Manage Invoices
+                                </button>
+                                <ul class="update-associate">
+                                  <li>Total Invoices:<span>$0.00</span></li>
+                                  <li>Total Amount Paid:<span>$0.00</span></li>
+                                  <li>Balance Due:<span>$0.00</span></li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <label for="inputState"
+                                  >Associate Counsel Name
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Intl Code"
+                                />
+                              </div>
+                            </div>
+
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <label for="inputState"
+                                  >Associate Counsel File #
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Intl Code"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
