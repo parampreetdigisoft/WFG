@@ -8,6 +8,16 @@ var editor;
                 ],
      responsive: true
  });
+
+    $('#FirmSearch').DataTable({
+        responsive: true,
+        bFilter: false
+    });
+
+    $('#ManageInvoice').DataTable({
+        responsive: true,
+        bFilter: false
+    });
  
   
 
