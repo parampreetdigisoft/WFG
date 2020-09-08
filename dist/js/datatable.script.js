@@ -7,13 +7,48 @@
     responsive: true,
   });
 
-  $("#FirmSearch").DataTable({
+  $("#firmSearch").DataTable({
     responsive: true,
     searching: false,
     lengthChange: false,
   });
 
-  $("#ManageInvoice").DataTable({
+  $("#searchresult").DataTable({
+    responsive: true,
+    searching: false,
+    lengthChange: false,
+    colReorder: {
+      order: [4, 3, 2, 1, 0, 5],
+    },
+  });
+
+  $("#requestserviceresult").DataTable({
+    responsive: true,
+    searching: false,
+    lengthChange: false,
+  });
+
+  $("#companytable").DataTable({
+    responsive: true,
+    searching: false,
+    lengthChange: false,
+    dom: "Bfrtip",
+    buttons: ["csv", "pdf"],
+  });
+
+  $("#manageInvoice").DataTable({
+    responsive: true,
+    searching: false,
+    lengthChange: false,
+  });
+
+  $("#managemylogin").DataTable({
+    responsive: true,
+    searching: false,
+    lengthChange: false,
+  });
+
+  $("#paymentreport").DataTable({
     responsive: true,
     searching: false,
     lengthChange: false,

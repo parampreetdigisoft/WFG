@@ -6267,10 +6267,6 @@ path.domain {
   display: none;
 }
 
-.document-center .dataTables_wrapper .dataTables_filter {
-  display: none;
-}
-
 .anchor-design {
   color: #1e3d73 !important;
   font-weight: 700;
@@ -6389,12 +6385,6 @@ path.domain {
 .view-requst .dataTables_wrapper .dt-buttons {
   display: block;
   margin-bottom: 25px;
-}
-
-.view-requst .dataTables_wrapper .dt-buttons .buttons-copy,
-.view-requst .dataTables_wrapper .dt-buttons .buttons-excel,
-.view-requst .dataTables_wrapper .dt-buttons .buttons-print {
-  display: none;
 }
 
 .view-requst .btn-group > .btn-group:not(:first-child),
