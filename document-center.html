@@ -1,1536 +1,1808 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<!-- START: Head-->
-<head>
+  <!-- START: Head-->
+  <head>
     <meta charset="UTF-8" />
     <title>WFJ Law Firm</title>
     <!--<link rel="shortcut icon" href="dist/images/favicon.ico" />-->
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
     <!-- START: Template CSS-->
-    <link rel="stylesheet"
-          href="dist/vendors/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="dist/vendors/bootstrap/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="dist/vendors/jquery-ui/jquery-ui.min.css" />
-    <link rel="stylesheet"
-          href="dist/vendors/jquery-ui/jquery-ui.theme.min.css" />
-    <link rel="stylesheet"
-          href="dist/vendors/simple-line-icons/css/simple-line-icons.css" />
-    <link rel="stylesheet"
-          href="dist/vendors/flags-icon/css/flag-icon.min.css" />
+    <link
+      rel="stylesheet"
+      href="dist/vendors/jquery-ui/jquery-ui.theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="dist/vendors/simple-line-icons/css/simple-line-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="dist/vendors/flags-icon/css/flag-icon.min.css"
+    />
     <!-- END Template CSS-->
     <!-- START: Page CSS-->
-    <link rel="stylesheet"
-          href="dist/vendors/datatable/css/dataTables.bootstrap4.min.css" />
-    <link rel="stylesheet"
-          href="dist/vendors/datatable/buttons/css/buttons.bootstrap4.min.css" />
+    <link
+      rel="stylesheet"
+      href="dist/vendors/datatable/css/dataTables.bootstrap4.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="dist/vendors/datatable/buttons/css/buttons.bootstrap4.min.css"
+    />
     <!-- END: Page CSS-->
     <!-- START: Page CSS-->
     <link rel="stylesheet" href="dist/vendors/chartjs/Chart.min.css" />
     <!-- END: Page CSS-->
     <!-- START: Page CSS-->
     <link rel="stylesheet" href="dist/vendors/morris/morris.css" />
-    <link rel="stylesheet"
-          href="dist/vendors/weather-icons/css/pe-icon-set-weather.min.css" />
+    <link
+      rel="stylesheet"
+      href="dist/vendors/weather-icons/css/pe-icon-set-weather.min.css"
+    />
     <link rel="stylesheet" href="dist/vendors/chartjs/Chart.min.css" />
     <link rel="stylesheet" href="dist/vendors/starrr/starrr.css" />
     <link rel="stylesheet" href="dist/vendors/fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="dist/vendors/font-awesome/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="dist/vendors/ionicons/css/ionicons.min.css" />
-    <link rel="stylesheet"
-          href="dist/vendors/jquery-jvectormap/jquery-jvectormap-2.0.3.css" />
+    <link
+      rel="stylesheet"
+      href="dist/vendors/jquery-jvectormap/jquery-jvectormap-2.0.3.css"
+    />
     <!-- END: Page CSS-->
     <!-- START: Custom CSS-->
     <link rel="stylesheet" href="dist/css/main.css" />
     <!-- END: Custom CSS-->
-</head>
-<!-- END Head-->
-<!-- START: Body-->
-<body id="main-container" class="default">
+  </head>
+  <!-- END Head-->
+  <!-- START: Body-->
+  <body id="main-container" class="default">
     <!-- START: Pre Loader-->
     <div class="se-pre-con">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
     <!-- END: Pre Loader-->
     <!-- START: Header-->
     <div id="header-fix" class="header fixed-top">
-        <div class="site-width">
-            <nav class="navbar navbar-expand-lg p-0">
-                <div class="navbar-header h-100 h4 mb-0 align-self-center logo-bar text-left">
-                    <a href="index.html" class="horizontal-logo text-left">
-                        <img src="dist/images/logo.png"
-                             class="d-block h-100 mx-auto"
-                             alt="" />
-                    </a>
-                </div>
-                <div class="navbar-header h4 mb-0 text-center h-100 collapse-menu-bar">
-                    <a href="#" class="sidebarCollapse" id="collapse">
-                        <i class="icon-menu"></i>
-                    </a>
-                </div>
+      <div class="site-width">
+        <nav class="navbar navbar-expand-lg p-0">
+          <div
+            class="navbar-header h-100 h4 mb-0 align-self-center logo-bar text-left"
+          >
+            <a href="index.html" class="horizontal-logo text-left">
+              <img
+                src="dist/images/logo.png"
+                class="d-block h-100 mx-auto"
+                alt=""
+              />
+            </a>
+          </div>
+          <div
+            class="navbar-header h4 mb-0 text-center h-100 collapse-menu-bar"
+          >
+            <a href="#" class="sidebarCollapse" id="collapse">
+              <i class="icon-menu"></i>
+            </a>
+          </div>
 
-                <form class="float-left d-none d-lg-block search-form">
-                    <div class="form-group mb-0 position-relative">
-                        <input type="text"
-                               class="form-control border-0 rounded bg-search pl-5"
-                               placeholder="Search anything..." />
-                        <div class="btn-search position-absolute top-0">
-                            <a href="#"><i class="h6 icon-magnifier"></i></a>
+          <form class="float-left d-none d-lg-block search-form">
+            <div class="form-group mb-0 position-relative">
+              <input
+                type="text"
+                class="form-control border-0 rounded bg-search pl-5"
+                placeholder="Search anything..."
+              />
+              <div class="btn-search position-absolute top-0">
+                <a href="#"><i class="h6 icon-magnifier"></i></a>
+              </div>
+              <a
+                href="#"
+                class="position-absolute close-button mobilesearch d-lg-none"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="icon-close h5"></i>
+              </a>
+            </div>
+          </form>
+          <div class="navbar-right ml-auto h-100">
+            <ul class="ml-auto p-0 m-0 list-unstyled d-flex top-icon h-100">
+              <li class="d-inline-block align-self-center d-block d-lg-none">
+                <a
+                  href="#"
+                  class="nav-link mobilesearch"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="icon-magnifier h4"></i>
+                </a>
+              </li>
+
+              <li class="dropdown align-self-center">
+                <a
+                  href="#"
+                  class="nav-link"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="icon-reload h4"></i>
+                  <span class="badge badge-default">
+                    <span class="ring"> </span><span class="ring-point"> </span>
+                  </span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right border py-0">
+                  <li>
+                    <a
+                      class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
+                      href="#"
+                    >
+                      <div class="media">
+                        <img
+                          src="dist/images/author.jpg"
+                          alt=""
+                          class="d-flex mr-3 img-fluid rounded-circle"
+                        />
+                        <div class="media-body">
+                          <p class="mb-0">john</p>
+                          <span class="text-success">New user registered.</span>
                         </div>
-                        <a href="#"
-                           class="position-absolute close-button mobilesearch d-lg-none"
-                           data-toggle="dropdown"
-                           aria-expanded="false">
-                            <i class="icon-close h5"></i>
-                        </a>
-                    </div>
-                </form>
-                <div class="navbar-right ml-auto h-100">
-                    <ul class="ml-auto p-0 m-0 list-unstyled d-flex top-icon h-100">
-                        <li class="d-inline-block align-self-center d-block d-lg-none">
-                            <a href="#"
-                               class="nav-link mobilesearch"
-                               data-toggle="dropdown"
-                               aria-expanded="false">
-                                <i class="icon-magnifier h4"></i>
-                            </a>
-                        </li>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
+                      href="#"
+                    >
+                      <div class="media">
+                        <img
+                          src="dist/images/author2.jpg"
+                          alt=""
+                          class="d-flex mr-3 img-fluid rounded-circle"
+                        />
+                        <div class="media-body">
+                          <p class="mb-0">Peter</p>
+                          <span class="text-success"
+                            >Server #12 overloaded.</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
+                      href="#"
+                    >
+                      <div class="media">
+                        <img
+                          src="dist/images/author3.jpg"
+                          alt=""
+                          class="d-flex mr-3 img-fluid rounded-circle"
+                        />
+                        <div class="media-body">
+                          <p class="mb-0">Bill</p>
+                          <span class="text-danger">Application error.</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
 
-                        <li class="dropdown align-self-center">
-                            <a href="#"
-                               class="nav-link"
-                               data-toggle="dropdown"
-                               aria-expanded="false">
-                                <i class="icon-reload h4"></i>
-                                <span class="badge badge-default">
-                                    <span class="ring"> </span><span class="ring-point"> </span>
-                                </span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-right border py-0">
-                                <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
-                                       href="#">
-                                        <div class="media">
-                                            <img src="dist/images/author.jpg"
-                                                 alt=""
-                                                 class="d-flex mr-3 img-fluid rounded-circle" />
-                                            <div class="media-body">
-                                                <p class="mb-0">john</p>
-                                                <span class="text-success">New user registered.</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
-                                       href="#">
-                                        <div class="media">
-                                            <img src="dist/images/author2.jpg"
-                                                 alt=""
-                                                 class="d-flex mr-3 img-fluid rounded-circle" />
-                                            <div class="media-body">
-                                                <p class="mb-0">Peter</p>
-                                                <span class="text-success">Server #12 overloaded.</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
-                                       href="#">
-                                        <div class="media">
-                                            <img src="dist/images/author3.jpg"
-                                                 alt=""
-                                                 class="d-flex mr-3 img-fluid rounded-circle" />
-                                            <div class="media-body">
-                                                <p class="mb-0">Bill</p>
-                                                <span class="text-danger">Application error.</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
+                  <li>
+                    <a class="dropdown-item text-center py-2" href="#">
+                      See All Tasks <i class="icon-arrow-right pl-2 small"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown align-self-center d-inline-block">
+                <a
+                  href="#"
+                  class="nav-link"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="icon-bell h4"></i>
+                  <span class="badge badge-default">
+                    <span class="ring"> </span><span class="ring-point"> </span>
+                  </span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right border py-0">
+                  <li>
+                    <a
+                      class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
+                      href="#"
+                    >
+                      <div class="media">
+                        <img
+                          src="dist/images/author.jpg"
+                          alt=""
+                          class="d-flex mr-3 img-fluid rounded-circle w-50"
+                        />
+                        <div class="media-body">
+                          <p class="mb-0 text-success">john send a message</p>
+                          12 min ago
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
+                      href="#"
+                    >
+                      <div class="media">
+                        <img
+                          src="dist/images/author2.jpg"
+                          alt=""
+                          class="d-flex mr-3 img-fluid rounded-circle"
+                        />
+                        <div class="media-body">
+                          <p class="mb-0 text-danger">Peter send a message</p>
+                          15 min ago
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
+                      href="#"
+                    >
+                      <div class="media">
+                        <img
+                          src="dist/images/author3.jpg"
+                          alt=""
+                          class="d-flex mr-3 img-fluid rounded-circle"
+                        />
+                        <div class="media-body">
+                          <p class="mb-0 text-warning">Bill send a message</p>
+                          5 min ago
+                        </div>
+                      </div>
+                    </a>
+                  </li>
 
-                                <li>
-                                    <a class="dropdown-item text-center py-2" href="#">
-                                        See All Tasks <i class="icon-arrow-right pl-2 small"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown align-self-center d-inline-block">
-                            <a href="#"
-                               class="nav-link"
-                               data-toggle="dropdown"
-                               aria-expanded="false">
-                                <i class="icon-bell h4"></i>
-                                <span class="badge badge-default">
-                                    <span class="ring"> </span><span class="ring-point"> </span>
-                                </span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-right border py-0">
-                                <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
-                                       href="#">
-                                        <div class="media">
-                                            <img src="dist/images/author.jpg"
-                                                 alt=""
-                                                 class="d-flex mr-3 img-fluid rounded-circle w-50" />
-                                            <div class="media-body">
-                                                <p class="mb-0 text-success">john send a message</p>
-                                                12 min ago
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
-                                       href="#">
-                                        <div class="media">
-                                            <img src="dist/images/author2.jpg"
-                                                 alt=""
-                                                 class="d-flex mr-3 img-fluid rounded-circle" />
-                                            <div class="media-body">
-                                                <p class="mb-0 text-danger">Peter send a message</p>
-                                                15 min ago
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
-                                       href="#">
-                                        <div class="media">
-                                            <img src="dist/images/author3.jpg"
-                                                 alt=""
-                                                 class="d-flex mr-3 img-fluid rounded-circle" />
-                                            <div class="media-body">
-                                                <p class="mb-0 text-warning">Bill send a message</p>
-                                                5 min ago
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
+                  <li>
+                    <a class="dropdown-item text-center py-2" href="#">
+                      Read All Message
+                      <i class="icon-arrow-right pl-2 small"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="dropdown user-profile align-self-center d-inline-block"
+              >
+                <a
+                  href="#"
+                  class="nav-link py-0"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="media">
+                    <img
+                      src="dist/images/author.jpg"
+                      alt=""
+                      class="d-flex img-fluid rounded-circle"
+                      width="29"
+                    />
+                  </div>
+                </a>
 
-                                <li>
-                                    <a class="dropdown-item text-center py-2" href="#">
-                                        Read All Message
-                                        <i class="icon-arrow-right pl-2 small"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown user-profile align-self-center d-inline-block">
-                            <a href="#"
-                               class="nav-link py-0"
-                               data-toggle="dropdown"
-                               aria-expanded="false">
-                                <div class="media">
-                                    <img src="dist/images/author.jpg"
-                                         alt=""
-                                         class="d-flex img-fluid rounded-circle"
-                                         width="29" />
-                                </div>
-                            </a>
+                <div class="dropdown-menu border dropdown-menu-right p-0">
+                  <a
+                    href=""
+                    class="dropdown-item px-2 align-self-center d-flex"
+                  >
+                    <span class="icon-pencil mr-2 h6 mb-0"></span> Edit Profile
+                  </a>
+                  <a
+                    href=""
+                    class="dropdown-item px-2 align-self-center d-flex"
+                  >
+                    <span class="icon-user mr-2 h6 mb-0"></span> View Profile
+                  </a>
+                  <div class="dropdown-divider"></div>
 
-                            <div class="dropdown-menu border dropdown-menu-right p-0">
-                                <a href=""
-                                   class="dropdown-item px-2 align-self-center d-flex">
-                                    <span class="icon-pencil mr-2 h6 mb-0"></span> Edit
-                                    Profile
-                                </a>
-                                <a href=""
-                                   class="dropdown-item px-2 align-self-center d-flex">
-                                    <span class="icon-user mr-2 h6 mb-0"></span> View Profile
-                                </a>
-                                <div class="dropdown-divider"></div>
-
-                                <a href=""
-                                   class="dropdown-item px-2 text-danger align-self-center d-flex">
-                                    <span class="icon-logout mr-2 h6 mb-0"></span> Log Out
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+                  <a
+                    href=""
+                    class="dropdown-item px-2 text-danger align-self-center d-flex"
+                  >
+                    <span class="icon-logout mr-2 h6 mb-0"></span> Log Out
+                  </a>
                 </div>
-            </nav>
-        </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
     <!-- END: Header-->
     <!-- START: Main Menu-->
     <div class="sidebar">
-        <div class="site-width">
-            <!-- START: Menu-->
-            <ul id="side-menu" class="sidebar-menu">
-                <li class="dropdown active">
-                    <a href="#"><i class="icon-home mr-1"></i> Dashboard</a>
-                    <ul>
-                        <li>
-                            <a href="index.html"><i class="icon-rocket"></i> Home</a>
-                        </li>
-                        <li class="active">
-                            <a href="document-center.html"><i class="icon-layers"></i> Document Center</a>
-                        </li>
-                        <li>
-                            <a href="request-services.html"><i class="icon-grid"></i> Request services</a>
-                        </li>
-                        <li>
-                            <a href="manage-my-login.html"><i class="icon-earphones"></i> Manage my login</a>
-                        </li>
-                        <li>
-                            <a href="payments.html"><i class="icon-support"></i> Payments</a>
-                        </li>
-                    </ul>
-                </li>
+      <div class="site-width">
+        <!-- START: Menu-->
+        <ul id="side-menu" class="sidebar-menu">
+          <li class="dropdown active">
+            <a href="#"><i class="icon-home mr-1"></i> Dashboard</a>
+            <ul>
+              <li>
+                <a href="index.html"><i class="icon-rocket"></i> Home</a>
+              </li>
+              <li class="active">
+                <a href="document-center.html"
+                  ><i class="icon-layers"></i> Document Center</a
+                >
+              </li>
+              <li>
+                <a href="request-services.html"
+                  ><i class="icon-grid"></i> Request services</a
+                >
+              </li>
+              <li>
+                <a href="manage-my-login.html"
+                  ><i class="icon-earphones"></i> Manage my login</a
+                >
+              </li>
+              <li>
+                <a href="payments.html"
+                  ><i class="icon-support"></i> Payments</a
+                >
+              </li>
             </ul>
-            <!-- END: Menu-->
-            <ol class="breadcrumb bg-transparent align-self-center m-0 p-0 ml-auto">
-                <li class="breadcrumb-item"><a href="#">Application</a></li>
-                <li class="breadcrumb-item active">Dashboard</li>
-            </ol>
-        </div>
+          </li>
+        </ul>
+        <!-- END: Menu-->
+        <ol class="breadcrumb bg-transparent align-self-center m-0 p-0 ml-auto">
+          <li class="breadcrumb-item"><a href="#">Application</a></li>
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+      </div>
     </div>
     <!-- END: Main Menu-->
 
     <div class="outer-main">
-        <!-- START: Main Content-->
-        <main>
-            <div class="document-center">
-                <div class="container-fluid site-width">
-                    <!-- START: Breadcrumbs-->
-                    <div class="row">
-                        <div class="col-md-4 col-xl-3">
-                            <h4 class="mb-1">Document Search</h4>
-                            <p>
-                                Specify your search criteria below and press <br />
-                                the Search button.
-                            </p>
+      <!-- START: Main Content-->
+      <main>
+        <div class="document-center">
+          <div class="container-fluid site-width">
+            <!-- START: Breadcrumbs-->
+            <div class="row">
+              <div class="col-md-4 col-xl-3">
+                <h4 class="mb-1">Document Search</h4>
+                <p>
+                  Specify your search criteria below and press <br />
+                  the Search button.
+                </p>
 
-                            <div class="card mt-3 mb-5 mb-md-0">
-                                <div class="card-content">
-                                    <div class="card-body">
-                                        <form>
-                                            <div class="form-group">
-                                                <label>State</label>
-                                                <select id="inputState" class="form-control">
-                                                    <option selected="">All</option>
-                                                    <option>Alabama</option>
-                                                    <option>Alaska</option>
-                                                    <option>All States</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>Client</label>
-                                                <select id="inputState" class="form-control">
-                                                    <option selected="">All</option>
-                                                    <option>ABF Printing</option>
-                                                    <option>Action Advertising and Flags</option>
-                                                    <option>Ad Specialties by ken</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>Document Type</label>
-                                                <select id="inputState" class="form-control">
-                                                    <option selected="">All</option>
-                                                    <option>Form</option>
-                                                    <option>Letter</option>
-                                                    <option>Pleading</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>Project Type</label>
-                                                <select id="inputState" class="form-control">
-                                                    <option selected="">All</option>
-                                                    <option>Private</option>
-                                                    <option>Public</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="inputDate">Keyword Search</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>Practice Area</label>
-                                                <select id="inputState" class="form-control">
-                                                    <option selected="">All</option>
-                                                    <option>Adoption</option>
-                                                    <option>Auto Accident</option>
-                                                    <option>Banking</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>Category (WFJ Use)</label>
-                                                <select id="inputState" class="form-control">
-                                                    <option selected="">All</option>
-                                                    <option>
-                                                        Commercial Litigation ---> Category Name 1
-                                                    </option>
-                                                    <option>
-                                                        Commercial Litigation ---> Category Name 2
-                                                    </option>
-                                                </select>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>Form Type</label>
-                                                <select id="inputState" class="form-control">
-                                                    <option selected="">All</option>
-                                                    <option>BUSINESS ENTITIES - Business Plans</option>
-                                                    <option>
-                                                        BUSINESS ENTITIES - Business Purchase
-                                                    </option>
-                                                </select>
-                                            </div>
-
-                                            <div class="clearfix">
-                                                <button type="submit"
-                                                        class="btn btn-primary float-right ml-2 mb-2 document-search-btn">
-                                                    Search
-                                                </button>
-                                                <button type="button"
-                                                        class="btn btn-primary float-right document-search-btn"
-                                                        data-toggle="modal"
-                                                        data-target="#newdocument">
-                                                    Enter New Document
-                                                </button>
-                                            </div>
-
-                                            <!-- Enter new document Modal -->
-                                            <div class="modal fade"
-                                                 id="newdocument"
-                                                 tabindex="-1"
-                                                 role="dialog"
-                                                 aria-labelledby="exampleModalLabel"
-                                                 aria-hidden="true">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">
-                                                                Add Document
-                                                            </h5>
-                                                            <button type="button"
-                                                                    class="close"
-                                                                    data-dismiss="modal"
-                                                                    aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <form>
-                                                                <div class="row">
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-group">
-                                                                            <label>State</label>
-                                                                            <select id="inputState"
-                                                                                    class="form-control"
-                                                                                    required>
-                                                                                <option selected="">All</option>
-                                                                                <option>Alabama</option>
-                                                                                <option>Alaska</option>
-                                                                                <option>All States</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-group">
-                                                                            <label>Document Type</label>
-                                                                            <select id="inputState"
-                                                                                    class="form-control">
-                                                                                <option selected="">All</option>
-                                                                                <option>Form</option>
-                                                                                <option>Letter</option>
-                                                                                <option>Pleading</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-group">
-                                                                            <label>Project Type</label>
-                                                                            <select id="inputState"
-                                                                                    class="form-control">
-                                                                                <option selected="">All</option>
-                                                                                <option>Private</option>
-                                                                                <option>Public</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-group">
-                                                                            <label>Client</label>
-                                                                            <select id="inputState"
-                                                                                    class="form-control">
-                                                                                <option selected="">All</option>
-                                                                                <option>ABF Printing</option>
-                                                                                <option>
-                                                                                    Action Advertising and Flags
-                                                                                </option>
-                                                                                <option>Ad Specialties by ken</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="col-md-12">
-                                                                        <div class="form-group">
-                                                                            <label>Practice Area</label>
-                                                                            <select id="inputState"
-                                                                                    class="form-control">
-                                                                                <option selected="">All</option>
-                                                                                <option>Adoption</option>
-                                                                                <option>Auto Accident</option>
-                                                                                <option>Banking</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="col-md-12">
-                                                                        <div class="form-group">
-                                                                            <label>Category (for WFJ Use)</label>
-                                                                            <select id="inputState"
-                                                                                    class="form-control">
-                                                                                <option selected="">All</option>
-                                                                                <option>
-                                                                                    Commercial Litigation ---&gt;
-                                                                                    Category Name 1
-                                                                                </option>
-                                                                                <option>
-                                                                                    Commercial Litigation ---&gt;
-                                                                                    Category Name 2
-                                                                                </option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-group">
-                                                                            <label for="inputDate">Document Name</label>
-                                                                            <input type="text"
-                                                                                   class="form-control" />
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-group">
-                                                                            <label for="inputDate">WFJ File #</label>
-                                                                            <input type="text"
-                                                                                   class="form-control" />
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="col-md-12">
-                                                                        <div class="form-group">
-                                                                            <label for="inputDate">Notify Days</label>
-                                                                            <input type="text"
-                                                                                   class="form-control" />
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="col-md-12">
-                                                                        <div class="form-group">
-                                                                            <label for="inputDate">Description</label>
-                                                                            <textarea class="form-control"
-                                                                                      id="exampleFormControlTextarea1"
-                                                                                      rows="3"></textarea>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-12">
-                                                                        <div class="custom-file">
-                                                                            <input type="file"
-                                                                                   class="custom-file-input"
-                                                                                   id="customFile" />
-                                                                            <label class="custom-file-label n-custom-file-label"
-                                                                                   for="customFile">Choose file</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button"
-                                                                    class="btn btn-secondary"
-                                                                    data-dismiss="modal">
-                                                                Close
-                                                            </button>
-                                                            <button type="submit" class="btn btn-primary">
-                                                                Save changes
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="card mt-3 mb-5 mb-md-0">
+                  <div class="card-content">
+                    <div class="card-body">
+                      <form>
+                        <div class="form-group">
+                          <label>State</label>
+                          <select id="inputState" class="form-control">
+                            <option selected="">All</option>
+                            <option>Alabama</option>
+                            <option>Alaska</option>
+                            <option>All States</option>
+                          </select>
                         </div>
-                        <div class="col-md-8 col-xl-9">
-                            <h4 class="mb-1">Here are your search results.</h4>
-                            <p>
-                                Click on a Document Name from the list below to view the
-                                Document. The document will appear in a new window.<br />
-                                When you are finished viewing the document, simply close the
-                                window.
-                            </p>
 
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table id="searchresult"
-                                               class="display table dataTable table-striped layout-primary table-bordered document-center-table">
-                                            <thead>
-                                                <tr>
-                                                    <th></th>
-                                                    <th>Company</th>
-                                                    <th>State</th>
-                                                    <th>Document Name</th>
-                                                    <th>Type</th>
-                                                    <th>Project</th>
-                                                    <th>Practice Area/Category</th>
-                                                    <th>Form Type</th>
-                                                    <th>WFJ File #</th>
-                                                    <th>File Name</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <a href=""
-                                                           class="anchor-design"
-                                                           data-toggle="modal"
-                                                           data-target="#editdocument">Edit</a>
-                                                    </td>
-                                                    <td></td>
-
-                                                    <td></td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Retirement Plan Enrollment Form</a>
-                                                    </td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-
-                                                    <td>D3012_testdoc.doc</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <a href=""
-                                                           class="anchor-design"
-                                                           data-toggle="modal"
-                                                           data-target="#editdocument">Edit</a>
-                                                    </td>
-                                                    <td></td>
-
-                                                    <td>Alaska</td>
-                                                    <td>test-100</td>
-                                                    <td>Letter</td>
-                                                    <td>Private</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <a href=""
-                                                           class="anchor-design"
-                                                           data-toggle="modal"
-                                                           data-target="#editdocument">Edit</a>
-                                                    </td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href=""
-                                                           class="anchor-design"
-                                                           data-toggle="modal"
-                                                           data-target="#editdocument">Edit</a>
-                                                    </td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href=""
-                                                           class="anchor-design"
-                                                           data-toggle="modal"
-                                                           data-target="#editdocument">Edit</a>
-                                                    </td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href=""
-                                                           class="anchor-design"
-                                                           data-toggle="modal"
-                                                           data-target="#editdocument">Edit</a>
-                                                    </td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href=""
-                                                           class="anchor-design"
-                                                           data-toggle="modal"
-                                                           data-target="#editdocument">Edit</a>
-                                                    </td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href=""
-                                                           class="anchor-design"
-                                                           data-toggle="modal"
-                                                           data-target="#editdocument">Edit</a>
-                                                    </td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href=""
-                                                           class="anchor-design"
-                                                           data-toggle="modal"
-                                                           data-target="#editdocument">Edit</a>
-                                                    </td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href=""
-                                                           class="anchor-design"
-                                                           data-toggle="modal"
-                                                           data-target="#editdocument">Edit</a>
-                                                    </td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <a href=""
-                                                           class="anchor-design"
-                                                           data-toggle="modal"
-                                                           data-target="#editdocument">Edit</a>
-                                                    </td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <a href=""
-                                                           class="anchor-design"
-                                                           data-toggle="modal"
-                                                           data-target="#editdocument">Edit</a>
-                                                    </td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href=""
-                                                           class="anchor-design"
-                                                           data-toggle="modal"
-                                                           data-target="#editdocument">Edit</a>
-                                                    </td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>BriteLite Promotions LLC</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Corporate Incentives</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Corporate Incentives</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Corporate Incentives</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Corporate Incentives</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Corporate Incentives</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Corporate Incentives</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Corporate Incentives</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Corporate Incentives</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Corporate Incentives</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Corporate Incentives</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Corporate Incentives</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Corporate Incentives</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="" class="anchor-design">Edit</a></td>
-                                                    <td>Creative Advertising Solutions Inc</td>
-                                                    <td>Alaska</td>
-                                                    <td>
-                                                        <a href="" target="_blank" class="anchor-design">Alaska Opinion Letter 2019</a>
-                                                    </td>
-                                                    <td>Both (Form/Letter)</td>
-                                                    <td>Both</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>D4689_AK - 070119 claimant opinion.doc</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="form-group">
+                          <label>Client</label>
+                          <select id="inputState" class="form-control">
+                            <option selected="">All</option>
+                            <option>ABF Printing</option>
+                            <option>Action Advertising and Flags</option>
+                            <option>Ad Specialties by ken</option>
+                          </select>
                         </div>
+
+                        <div class="form-group">
+                          <label>Document Type</label>
+                          <select id="inputState" class="form-control">
+                            <option selected="">All</option>
+                            <option>Form</option>
+                            <option>Letter</option>
+                            <option>Pleading</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Project Type</label>
+                          <select id="inputState" class="form-control">
+                            <option selected="">All</option>
+                            <option>Private</option>
+                            <option>Public</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="inputDate">Keyword Search</label>
+                          <input type="text" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                          <label>Practice Area</label>
+                          <select id="inputState" class="form-control">
+                            <option selected="">All</option>
+                            <option>Adoption</option>
+                            <option>Auto Accident</option>
+                            <option>Banking</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Category (WFJ Use)</label>
+                          <select id="inputState" class="form-control">
+                            <option selected="">All</option>
+                            <option>
+                              Commercial Litigation ---> Category Name 1
+                            </option>
+                            <option>
+                              Commercial Litigation ---> Category Name 2
+                            </option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Form Type</label>
+                          <select id="inputState" class="form-control">
+                            <option selected="">All</option>
+                            <option>BUSINESS ENTITIES - Business Plans</option>
+                            <option>
+                              BUSINESS ENTITIES - Business Purchase
+                            </option>
+                          </select>
+                        </div>
+
+                        <div class="clearfix">
+                          <button
+                            type="submit"
+                            class="btn btn-primary float-right ml-2 mb-2 document-search-btn"
+                          >
+                            Search
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary float-right document-search-btn"
+                            data-toggle="modal"
+                            data-target="#newdocument"
+                          >
+                            Enter New Document
+                          </button>
+                        </div>
+
+                        <!-- Enter new document Modal -->
+                        <div
+                          class="modal fade"
+                          id="newdocument"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="exampleModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                  Add Document
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="close"
+                                  data-dismiss="modal"
+                                  aria-label="Close"
+                                >
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label>State</label>
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                          required
+                                        >
+                                          <option selected="">All</option>
+                                          <option>Alabama</option>
+                                          <option>Alaska</option>
+                                          <option>All States</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label>Document Type</label>
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                        >
+                                          <option selected="">All</option>
+                                          <option>Form</option>
+                                          <option>Letter</option>
+                                          <option>Pleading</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label>Project Type</label>
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                        >
+                                          <option selected="">All</option>
+                                          <option>Private</option>
+                                          <option>Public</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label>Client</label>
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                        >
+                                          <option selected="">All</option>
+                                          <option>ABF Printing</option>
+                                          <option>
+                                            Action Advertising and Flags
+                                          </option>
+                                          <option>Ad Specialties by ken</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label>Practice Area</label>
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                        >
+                                          <option selected="">All</option>
+                                          <option>Adoption</option>
+                                          <option>Auto Accident</option>
+                                          <option>Banking</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label>Category (for WFJ Use)</label>
+                                        <select
+                                          id="inputState"
+                                          class="form-control"
+                                        >
+                                          <option selected="">All</option>
+                                          <option>
+                                            Commercial Litigation ---&gt;
+                                            Category Name 1
+                                          </option>
+                                          <option>
+                                            Commercial Litigation ---&gt;
+                                            Category Name 2
+                                          </option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="inputDate"
+                                          >Document Name</label
+                                        >
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="inputDate"
+                                          >WFJ File #</label
+                                        >
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label for="inputDate"
+                                          >Notify Days</label
+                                        >
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label for="inputDate"
+                                          >Description</label
+                                        >
+                                        <textarea
+                                          class="form-control"
+                                          id="exampleFormControlTextarea1"
+                                          rows="3"
+                                        ></textarea>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <div class="custom-file">
+                                        <input
+                                          type="file"
+                                          class="custom-file-input"
+                                          id="customFile"
+                                        />
+                                        <label
+                                          class="custom-file-label n-custom-file-label"
+                                          for="customFile"
+                                          >Choose file</label
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-dismiss="modal"
+                                >
+                                  Close
+                                </button>
+                                <button type="submit" class="btn btn-primary">
+                                  Save changes
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
                     </div>
-                    <!-- END: Breadcrumbs-->
+                  </div>
                 </div>
+              </div>
+              <div class="col-md-8 col-xl-9">
+                <h4 class="mb-1">Here are your search results.</h4>
+                <p>
+                  Click on a Document Name from the list below to view the
+                  Document. The document will appear in a new window.<br />
+                  When you are finished viewing the document, simply close the
+                  window.
+                </p>
+
+                <div class="card">
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table
+                        id="searchresult"
+                        class="display table dataTable table-striped layout-primary table-bordered document-center-table"
+                      >
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Company</th>
+                            <th>State</th>
+                            <th>Document Name</th>
+                            <th>Type</th>
+                            <th>Project</th>
+                            <th>Practice Area/Category</th>
+                            <th>Form Type</th>
+                            <th>WFJ File #</th>
+                            <th>File Name</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
+                            <td></td>
+
+                            <td></td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Retirement Plan Enrollment Form</a
+                              >
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                            <td>D3012_testdoc.doc</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
+                            <td></td>
+
+                            <td>Alaska</td>
+                            <td>test-100</td>
+                            <td>Letter</td>
+                            <td>Private</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a
+                                href=""
+                                class="anchor-design"
+                                data-toggle="modal"
+                                data-target="#editdocument"
+                                >Edit</a
+                              >
+                            </td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>BriteLite Promotions LLC</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Corporate Incentives</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Corporate Incentives</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Corporate Incentives</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Corporate Incentives</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Corporate Incentives</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Corporate Incentives</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Corporate Incentives</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Corporate Incentives</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Corporate Incentives</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Corporate Incentives</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Corporate Incentives</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Corporate Incentives</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                          <tr>
+                            <td><a href="" class="anchor-design">Edit</a></td>
+                            <td>Creative Advertising Solutions Inc</td>
+                            <td>Alaska</td>
+                            <td>
+                              <a href="" target="_blank" class="anchor-design"
+                                >Alaska Opinion Letter 2019</a
+                              >
+                            </td>
+                            <td>Both (Form/Letter)</td>
+                            <td>Both</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>D4689_AK - 070119 claimant opinion.doc</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </main>
-        <!-- END: Content-->
-        <!-- START: Footer-->
-        <footer class="site-footer">
-            <div class="clearfix">
-                <div class="float-md-left">
-                    <ol class="breadcrumb bg-transparent align-self-center m-0 p-0">
-                        <li class="breadcrumb-item" aria-current="page">
-                            <a href="#">Website</a>
-                        </li>
-                        <li class="breadcrumb-item" aria-current="page">
-                            <a href="#">Client Extranet</a>
-                        </li>
-                        <li class="breadcrumb-item" aria-current="page">
-                            <a href="#">Privacy</a>
-                        </li>
-                        <li class="breadcrumb-item" aria-current="page">
-                            <a href="#">Legal</a>
-                        </li>
-                    </ol>
-                </div>
-                <div class="float-md-right">
-                    <p class="mb-0 mt-3 mt-md-0">
-                        All Content © Wagner, Falconer & Judd, Ltd. 2020
-                    </p>
-                </div>
-            </div>
-        </footer>
-        <!-- END: Footer-->
+            <!-- END: Breadcrumbs-->
+          </div>
+        </div>
+      </main>
+      <!-- END: Content-->
+      <!-- START: Footer-->
+      <footer class="site-footer">
+        <div class="clearfix">
+          <div class="float-md-left">
+            <ol class="breadcrumb bg-transparent align-self-center m-0 p-0">
+              <li class="breadcrumb-item" aria-current="page">
+                <a href="#">Website</a>
+              </li>
+              <li class="breadcrumb-item" aria-current="page">
+                <a href="#">Client Extranet</a>
+              </li>
+              <li class="breadcrumb-item" aria-current="page">
+                <a href="#">Privacy</a>
+              </li>
+              <li class="breadcrumb-item" aria-current="page">
+                <a href="#">Legal</a>
+              </li>
+            </ol>
+          </div>
+          <div class="float-md-right">
+            <p class="mb-0 mt-3 mt-md-0">
+              All Content © Wagner, Falconer & Judd, Ltd. 2020
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- END: Footer-->
     </div>
 
     <!-- Edit document Modal -->
-    <div class="modal fade"
-         id="editdocument"
-         tabindex="-1"
-         role="dialog"
-         aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edit Document</h5>
-                    <button type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    <div
+      class="modal fade"
+      id="editdocument"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Document</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>State</label>
+                    <select id="inputState" class="form-control">
+                      <option selected="">Alabama</option>
+                      <option>Alabama</option>
+                      <option>Alaska</option>
+                      <option>All States</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>State</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected="">Alabama</option>
-                                        <option>Alabama</option>
-                                        <option>Alaska</option>
-                                        <option>All States</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Document Type</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected="">Form</option>
-                                        <option>Form</option>
-                                        <option>Letter</option>
-                                        <option>Pleading</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Project Type</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected="">Private</option>
-                                        <option>Private</option>
-                                        <option>Public</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Client</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected="">ABF Printing</option>
-                                        <option>ABF Printing</option>
-                                        <option>Action Advertising and Flags</option>
-                                        <option>Ad Specialties by ken</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label>Practice Area</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected="">Adoption</option>
-                                        <option>Adoption</option>
-                                        <option>Auto Accident</option>
-                                        <option>Banking</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label>Category (for WFJ Use)</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected="">
-                                            Commercial Litigation ---&gt; Category Name 1
-                                        </option>
-                                        <option>
-                                            Commercial Litigation ---&gt; Category Name 1
-                                        </option>
-                                        <option>
-                                            Commercial Litigation ---&gt; Category Name 2
-                                        </option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="inputDate">Document Name</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="inputDate">WFJ File #</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="inputDate">Notify Days</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="inputDate">Description</label>
-                                    <textarea class="form-control"
-                                              id="exampleFormControlTextarea1"
-                                              rows="3"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="custom-file">
-                                    <input type="file"
-                                           class="custom-file-input"
-                                           id="customFile" />
-                                    <label class="custom-file-label n-custom-file-label"
-                                           for="customFile">Choose file</label>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Document Type</label>
+                    <select id="inputState" class="form-control">
+                      <option selected="">Form</option>
+                      <option>Form</option>
+                      <option>Letter</option>
+                      <option>Pleading</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button"
-                            class="btn btn-secondary"
-                            data-dismiss="modal">
-                        Close
-                    </button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Project Type</label>
+                    <select id="inputState" class="form-control">
+                      <option selected="">Private</option>
+                      <option>Private</option>
+                      <option>Public</option>
+                    </select>
+                  </div>
                 </div>
-            </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Client</label>
+                    <select id="inputState" class="form-control">
+                      <option selected="">ABF Printing</option>
+                      <option>ABF Printing</option>
+                      <option>Action Advertising and Flags</option>
+                      <option>Ad Specialties by ken</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Practice Area</label>
+                    <select id="inputState" class="form-control">
+                      <option selected="">Adoption</option>
+                      <option>Adoption</option>
+                      <option>Auto Accident</option>
+                      <option>Banking</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Category (for WFJ Use)</label>
+                    <select id="inputState" class="form-control">
+                      <option selected="">
+                        Commercial Litigation ---&gt; Category Name 1
+                      </option>
+                      <option>
+                        Commercial Litigation ---&gt; Category Name 1
+                      </option>
+                      <option>
+                        Commercial Litigation ---&gt; Category Name 2
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputDate">Document Name</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputDate">WFJ File #</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="inputDate">Notify Days</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="inputDate">Description</label>
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      id="customFile"
+                    />
+                    <label
+                      class="custom-file-label n-custom-file-label"
+                      for="customFile"
+                      >Choose file</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- START: Back to top-->
     <a href="#" class="scrollup text-center">
-        <i class="icon-arrow-up"></i>
+      <i class="icon-arrow-up"></i>
     </a>
     <!-- END: Back to top-->
     <!-- START: Template JS-->
@@ -1585,15 +1857,15 @@
     <!-- END: Page JS-->
 
     <script>
-        // Add the following code if you want the name of the file appear on select
-        $(".custom-file-input").on("change", function () {
-            var fileName = $(this).val().split("\\").pop();
-            $(this)
-                .siblings(".custom-file-label")
-                .addClass("selected")
-                .html(fileName);
-        });
+      // Add the following code if you want the name of the file appear on select
+      $(".custom-file-input").on("change", function () {
+        var fileName = $(this).val().split("\\").pop();
+        $(this)
+          .siblings(".custom-file-label")
+          .addClass("selected")
+          .html(fileName);
+      });
     </script>
-</body>
-<!-- END: Body-->
+  </body>
+  <!-- END: Body-->
 </html>
