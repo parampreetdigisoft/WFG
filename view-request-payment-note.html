@@ -384,117 +384,97 @@
             <!-- START: Breadcrumbs-->
             <div class="row">
               <div class="col-md-5 col-xl-5">
-                <div class="card mb-5 mb-md-0">
+                <div class="form-group">
+                  <button type="submit" class="btn btn-secondary">PDF</button>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-content">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>Requestor</label>
+                            <select id="inputState" class="form-control">
+                              <option selected="">Select</option>
+                              <option>Andrew Nielsen</option>
+                              <option>Ashley Yer</option>
+                              <option>Barb Blomquist</option>
+                            </select>
+                          </div>
+                          <!--<label for="">
+                                                    2700 2nd St. North Minneapolis, MN 55411 (612)
+                                                    588-7811</label
+                                                  >
+
+                                                  <label for=""> Mylo.Gustafson@goodinco.com</label>-->
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>Assigned Attorney</label>
+                            <select id="inputState" class="form-control">
+                              <option selected="">Select</option>
+                              <option>Unassigned</option>
+                              <option>Jeffrey Nicolet</option>
+                              <option>John Markham</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>Assigned Collector</label>
+                            <select id="inputState" class="form-control">
+                              <option selected="">Select</option>
+                              <option>Andrew Nielsen</option>
+                              <option>Ashley Yer</option>
+                              <option>Barb Blomquist</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>Status</label>
+                            <select id="inputState" class="form-control">
+                              <option selected="">Select</option>
+                              <option>Active</option>
+                              <option>Local Counsel</option>
+                              <option>In Suit</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="inputDate">Request Date</label>
+                            <input
+                              type="text"
+                              class="form-control datepicker"
+                              id="inputDate"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="inputDate">WFJ File Close Date</label>
+                            <input
+                              type="text"
+                              class="form-control datepicker"
+                              id="inputDate"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-4">
                   <div class="card-content">
                     <div class="card-body">
                       <form>
                         <div class="row">
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <button type="submit" class="btn btn-secondary">
-                                PDF
-                              </button>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <label>Requestor</label>
-                              <select id="inputState" class="form-control">
-                                <option selected="">Select</option>
-                                <option>Andrew Nielsen</option>
-                                <option>Ashley Yer</option>
-                                <option>Barb Blomquist</option>
-                              </select>
-                            </div>
-                            <!--<label for="">
-                                                      2700 2nd St. North Minneapolis, MN 55411 (612)
-                                                      588-7811</label
-                                                    >
-
-                                                    <label for=""> Mylo.Gustafson@goodinco.com</label>-->
-                          </div>
-
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <label>Assigned Attorney</label>
-                              <select id="inputState" class="form-control">
-                                <option selected="">Select</option>
-                                <option>Unassigned</option>
-                                <option>Jeffrey Nicolet</option>
-                                <option>John Markham</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <label>Assigned Collector</label>
-                              <select id="inputState" class="form-control">
-                                <option selected="">Select</option>
-                                <option>Andrew Nielsen</option>
-                                <option>Ashley Yer</option>
-                                <option>Barb Blomquist</option>
-                              </select>
-                            </div>
-                          </div>
-
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <label>Status</label>
-                              <select id="inputState" class="form-control">
-                                <option selected="">Select</option>
-                                <option>Active</option>
-                                <option>Local Counsel</option>
-                                <option>In Suit</option>
-                              </select>
-                            </div>
-                          </div>
-
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <label for="inputDate">Request Date</label>
-                              <input
-                                type="text"
-                                class="form-control datepicker"
-                                id="inputDate"
-                              />
-                            </div>
-                          </div>
-
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <label for="inputDate">WFJ File Close Date</label>
-                              <input
-                                type="text"
-                                class="form-control datepicker"
-                                id="inputDate"
-                              />
-                            </div>
-                          </div>
-                          <!--<div class="col-md-3">
-                                                  <div class="form-group">
-                                                    <label>Balance Due:</label>
-                                                    <p class="for-bold">$11,280.82</p>
-                                                  </div>
-                                                </div>
-
-                                                <div class="col-md-5">
-                                                  <div class="form-group">
-                                                    <label
-                                                      >Total Customer Payments/Credits:</label
-                                                    >
-                                                    <p class="for-bold">$0.00</p>
-                                                  </div>
-                                                </div>
-
-                                                <div class="col-md-4">
-                                                  <div class="form-group">
-                                                    <label
-                                                      >Remaining Amount Due:</label
-                                                    >
-                                                    <p class="for-bold">$11,280.82</p>
-                                                  </div>
-                                                </div>-->
-
                           <div class="col-md-6">
                             <div class="form-group">
                               <label for="inputDate">Customer Name</label>
@@ -517,6 +497,15 @@
                                 id="exampleFormControlTextarea1"
                                 rows="1"
                                 placeholder="Address"
+                              ></textarea>
+                            </div>
+
+                            <div class="form-group">
+                              <textarea
+                                class="form-control"
+                                id="exampleFormControlTextarea1"
+                                rows="1"
+                                placeholder="Address 2"
                               ></textarea>
                             </div>
 
@@ -563,199 +552,6 @@
                             </div>
                           </div>
 
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <label>Customer Phone Domestic</label>
-                              <div class="row">
-                                <div class="col-md-3">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Area Code"
-                                    />
-                                  </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Exchange"
-                                    />
-                                  </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Number"
-                                    />
-                                  </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Extension"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <label> Customer Phone International </label>
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Intl Code"
-                                    />
-                                  </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Country Code + Number"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <label>Customer Fax Domestic</label>
-                              <div class="row">
-                                <div class="col-md-3">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Area Code"
-                                    />
-                                  </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Exchange"
-                                    />
-                                  </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Number"
-                                    />
-                                  </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Extension"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <label> Customer Fax International </label>
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Intl Code"
-                                    />
-                                  </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Country Code + Number"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <label>Customer Cell Phone</label>
-                              <div class="row">
-                                <div class="col-md-3">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Area Code"
-                                    />
-                                  </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Exchange"
-                                    />
-                                  </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Number"
-                                    />
-                                  </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                  <div class="form-group">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Extension"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
                           <div class="col-md-6">
                             <div class="form-group">
                               <label>Customer E-Mail</label>
@@ -768,102 +564,184 @@
                               <input type="text" class="form-control" />
                             </div>
                           </div>
+
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label>Balance Due</label>
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label>Amount Due with Service Charge</label>
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="inputDate"
-                                >CollectMax Record Number</label
-                              >
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="inputDate">WFJ File #</label>
-                              <input type="text" class="form-control" />
+                              <label>Customer Phone Domestic</label>
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder=""
+                                />
+                              </div>
                             </div>
                           </div>
 
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="inputDate"
-                                >Converted from Bond: WFJ File #</label
-                              >
-                              <input type="text" class="form-control" />
+                              <label>Customer Phone International</label>
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder=""
+                                />
+                              </div>
                             </div>
                           </div>
 
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="inputDate"
-                                >Converted from Lien: WFJ File #</label
-                              >
-                              <input type="text" class="form-control" />
+                              <label>Customer Fax Domestic</label>
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder=""
+                                />
+                              </div>
                             </div>
                           </div>
 
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label>Bill Type</label>
-                              <select id="inputState" class="form-control">
-                                <option selected="">Select</option>
-                                <option>Contingent</option>
-                                <option>Hourly</option>
-                                <option>Flat Fee</option>
-                              </select>
+                              <label>Customer Fax International</label>
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder=""
+                                />
+                              </div>
                             </div>
                           </div>
 
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label>Practice Group</label>
-                              <select id="inputState" class="form-control">
-                                <option selected="">Select</option>
-                                <option>Commercial Litigation</option>
-                                <option>Criminal</option>
-                                <option>Estate Planning</option>
-                              </select>
+                              <label>Customer Cell Phone</label>
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder=""
+                                />
+                              </div>
                             </div>
                           </div>
-
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="inputDate">Rate</label>
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="clearfix">
-                          <button
-                            type="submit"
-                            class="btn btn-primary float-right ml-2 mb-2 document-search-btn"
-                          >
-                            Submit
-                          </button>
-
-                          <button
-                            type="button"
-                            class="btn btn-secondary float-right document-search-btn"
-                            data-dismiss="modal"
-                          >
-                            Delete
-                          </button>
                         </div>
                       </form>
                     </div>
                   </div>
+                </div>
+
+                <div class="card mb-4">
+                  <div class="card-content">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Balance Due</label>
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Amount Due with Service Charge</label>
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="inputDate"
+                              >CollectMax Record Number</label
+                            >
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="inputDate">WFJ File #</label>
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="inputDate"
+                              >Converted from Bond: WFJ File #</label
+                            >
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="inputDate"
+                              >Converted from Lien: WFJ File #</label
+                            >
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Bill Type</label>
+                            <select id="inputState" class="form-control">
+                              <option selected="">Select</option>
+                              <option>Contingent</option>
+                              <option>Hourly</option>
+                              <option>Flat Fee</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Practice Group</label>
+                            <select id="inputState" class="form-control">
+                              <option selected="">Select</option>
+                              <option>Commercial Litigation</option>
+                              <option>Criminal</option>
+                              <option>Estate Planning</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="inputDate">Rate</label>
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="clearfix">
+                  <button
+                    type="submit"
+                    class="btn btn-primary float-right ml-2 mb-2 document-search-btn"
+                  >
+                    Submit
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-secondary float-right document-search-btn ml-2 mb-2"
+                    data-dismiss="modal"
+                  >
+                    Delete
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-secondary float-right document-search-btn"
+                    data-dismiss="modal"
+                  >
+                    Copy
+                  </button>
                 </div>
               </div>
               <div class="col-md-7 col-xl-7">
