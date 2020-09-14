@@ -6398,3 +6398,13 @@ path.domain {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
+
+@media (max-width: 767px) {
+  .fc-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .fc-right {
+    margin-top: 20px;
+  }
+}
